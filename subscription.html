@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscription</title>
+    <style type="text/css">
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            background-color: #111;
+        }
+        header{
+            max-width: 1200px;
+            margin: auto auto 5px;
+        }
+        .follow a{
+            float: right;
+            text-decoration: none;
+            color: #33ccff;
+            padding: 10px;
+        }
+        .banner{
+            clear: both;
+            background-color: #222;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .banner .logo{
+            width: 120px;
+            line-height: 0;
+  
+        }
+        .banner .logo img{
+            width: 120px;
+            vertical-align: top;
+            
+        }
+        .banner .menu a{
+            text-decoration: none;
+            color: #33ccff;
+            padding: 0 10px;
+        }
+        .banner .menu a:hover{
+            color: red;
+            font-size: 25px;
+            transition: .8s;
+            font-family: "Wu";
+        }
+        
+
+        article{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .email{
+            width: 720px;
+            background-color: #222;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 30px;
+        }
+
+        
+        
+
+        article h1{
+            color: white;
+            text-align: center;
+            margin: 20px;
+           
+        }
+        article h1::after{
+            display: block;
+            margin-top: 20px;
+            content: '';
+            height: 1px;
+            flex-grow: 1;
+            background-color: white;
+        }
+        article b{
+            color: red;
+        }
+        article p{
+            color: white;
+            display: inline-block;
+        }
+        button{
+            border: none;
+            list-style: none;
+            padding: 5px 15px;
+            color: white;
+            background-color: #208EB1;
+            border-radius: 5px;
+        }
+        input{
+            list-style: none;
+            border: none;
+            margin: 0 10px;
+            height: 20px;
+        }
+        .footer{
+            width: 1200px;
+            margin: auto;
+        }
+        .footer .contact{
+            background-color: #444;
+        }
+        .footer .statement{
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="follow">
+                <a href="#">訂閱我們</a>
+                <a href="#">投稿</a>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <img src="https://picsum.photos/100/50/?random=1">
+                <!-- <img src="img/logo.png" alt="鬼怪"> -->
+            </div>
+            <nav class="menu">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="#">關於我們</a>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <div class="email">
+            <h1>訂閱我們</h1>
+            <p><b>*</b> E-mail：</p>
+            <input type="text">
+            <button>提交</button>
+        </div>
+    </article>
+    <div class="footer">
+        <div class="contact"></div>
+        <div class="statement">
+            <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
