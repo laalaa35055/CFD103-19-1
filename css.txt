@@ -1,0 +1,39 @@
+header{
+            max-width: 1200px;
+            margin: auto auto 5px;
+        }
+        .follow a{
+            float: right;
+            text-decoration: none;
+            color: #33ccff;
+            padding: 10px;
+        }
+        .banner{
+            clear: both;
+            background-color: #222;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .banner .logo{
+            width: 120px;
+            line-height: 0;
+  
+        }
+        .banner .logo img{
+            width: 120px;
+            vertical-align: top;
+            
+        }
+        .banner .menu a{
+            text-decoration: none;
+            color: #33ccff;
+            padding: 0 10px;
+        }
+        .banner .menu a:hover{
+            color: red;
+            font-size: 25px;
+            transition: .8s;
+            font-family: "Wu";
+        }
