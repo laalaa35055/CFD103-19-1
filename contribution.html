@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contribution</title>
+    <style type="text/css">
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        @font-face {
+        font-family: 'Wu';
+        src: url('font/onryou/onryou.TTF') format("truetype");} 
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            background-image: url(img/background_image.jpg);
+        }    
+        header{
+            width: 1024px;
+            margin: auto auto 10px auto;
+            background-color: transparent;
+        }
+        header .subscription{
+	    margin-top: 10px;
+            float: right;
+        }
+        header .subscription a{
+            color: #33ccff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .banner{
+            clear: both;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: 3px solid #444; */
+        }
+        .banner .logo {
+            width: 120px;
+        }
+        .banner .logo img{
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .banner .nav_bar a{
+            color: #33ccff;
+            
+            text-decoration: none;
+            padding: 10px;
+
+        }
+        .banner .nav_bar a:hover{
+            color: red;
+            font-family: 'Wu';
+            font-size: 25px;
+            transition: .7s;
+        }
+        .contribution{
+            position: absolute;
+            top: calc( 100% / 2 - 380px);
+            left: calc( 100% / 2 - 280px);
+            width: 560px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: rgba(44, 44, 44, .6);
+        }
+        .contribution section h1{
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 25px;
+            display: block;
+        }
+        .contribution section {
+           padding: 50px 0;
+     
+        }
+        .contribution section h1::after{
+            display: block;
+            content: '';
+            background-color: white;
+            height: 1px;
+            flex-grow: 1;
+            margin: 20px 50px 80px;
+        }
+        .contribution_content{
+            box-sizing: border-box;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contribution b{
+            color: red;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .contribution_write{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 15px 0;
+        }
+        .contribution_write:nth-child(1){
+            align-items: center;
+        }
+        .contribution_write span{
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            text-align: center;
+            /* display: flex; */
+        }
+        .contribution_write input{
+            width: 400px;
+            border-radius: 10px;
+            /* padding: 10px; */
+            font-size: 15px;
+            text-align: center;
+        }
+        textarea{
+           width: 400px;
+           height: 300px;
+           border-radius: 10px;
+           text-align: center;
+        }
+        .contribution button{
+            border: none;
+            width: 60px;
+            padding: 10px;
+            color: white;
+            background-color: #208EB1;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .contribution_write:nth-child(3){
+            color: white;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%; 
+            background-color: rgba(22, 22, 22, .6)
+        }
+        .statement{
+            
+            background-color: rgba(44, 44, 44, .6);
+        }
+        .statement p{
+            color: rgba(255, 255, 255, .8);
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subscription">
+            <a href="#">投稿</a>
+            <a href="#">訂閱我們</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="#">關於我們</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <article class="contribution">
+        <section>
+            <h1>投稿</h1>
+            <div class="contribution_content">
+                <div class="contribution_write">
+                    <span><b> * </b>主題：</span><input type="text">
+                </div>
+                <div class="contribution_write">
+                    <span><b> * </b>內容：</span><textarea></textarea>
+                </div>
+                <div class="contribution_write">
+                    <span>&nbsp&nbsp&nbsp檔案：</span><input type="file">
+                </div>
+                <b>* 請在內容處提供來源 謝謝</b>
+                <button>投稿</button>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>

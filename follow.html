@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style type="text/css">
+            *{
+            padding: 0;
+            margin: 0;
+        }
+        @font-face {
+        font-family: 'Wu';
+        src: url('font/onryou/onryou.TTF') format("truetype");} 
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            background-image: url(img/background_image.jpg);
+            position: relative;
+        }    
+        header{
+            width: 1024px;
+            margin: auto auto 10px auto;
+            background-color: transparent;
+        }
+        header .subscription{
+            margin-top: 10px;
+            float: right;
+        }
+        header .subscription a{
+            color: #33ccff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .banner{
+            clear: both;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: 3px solid #444; */
+        }
+        .banner .logo {
+            width: 120px;
+        }
+        .banner .logo img{
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .banner .nav_bar a{
+            color: #33ccff;
+            
+            text-decoration: none;
+            padding: 10px;
+
+        }
+        .banner .nav_bar a:hover{
+            color: red;
+            font-family: 'Wu';
+            font-size: 25px;
+            transition: .7s;
+        }
+        .write_email{
+            position: absolute;
+            top:  calc( 100% / 2 - 125px);
+            left: calc( 100% / 2 - 280px);
+            width: 560px;
+            height: 250px;
+            background-color: rgba(22, 22, 22,.6);
+            border-radius: 20px;
+            color: white;
+            margin: auto;
+        }
+        .write_email section{
+            padding: 50px 0;
+        }
+        .write_email h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 25px;
+            display: block;
+            
+        }
+        .write_email h1::after{
+            display: block;
+            content: '';
+            background-color: white;
+            height: 1px;
+            flex-grow: 1;
+            margin: 20px 80px 50px;
+        }
+        .follow{
+          display: flex;
+          justify-content: center;
+        }
+        .follow b{
+            color: red;
+        }
+        .follow span{
+            font-size: 20px;
+            margin-right: 15px;
+        }
+        .follow input{
+            border: none;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .follow button{
+            border: none;
+            width: 60px;
+            padding: 5px;
+            color: white;
+            background-color: #208EB1;
+            border-radius: 5px;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%; 
+            background-color: rgba(22, 22, 22, .6)
+        }
+      
+        .statement{
+            background-color: rgba(44, 44, 44, .6);
+        }
+        .statement p{
+            color: rgba(255, 255, 255, .8);
+            text-align: center;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subscription">
+            <a href="#">投稿</a>
+            <a href="follow.html">訂閱我們</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="#">關於我們</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <article class="write_email">
+        <section >
+            <h1>訂閱我們</h1>
+            <div class="follow">
+                <span><b> * </b>E-mail：</span>
+                <input type="email">
+                <button>提交</button>
+            </div>
+            
+        </section>
+    </article>
+
+
+
+    <footer>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
