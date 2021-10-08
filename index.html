@@ -12,8 +12,284 @@
         }
         @font-face {
         font-family: 'Wu';
-        src: url('font/onryou/onryou.TTF') format("truetype");       
-        }  
+        src: url('font/onryou/onryou.TTF') format("truetype");} 
+        body{
+            margin-top: 10px;
+            background-image: url(img/background_image.jpg);
+        }    
+        header{
+            width: 1024px;
+            margin: auto auto 10px auto;
+            background-color: transparent;
+        }
+        header .subscription{
+            float: right;
+        }
+        header .subscription a{
+            color: #33ccff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .banner{
+            clear: both;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: 3px solid #444; */
+        }
+        .banner .logo {
+            width: 120px;
+        }
+        .banner .logo img{
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .banner .nav_bar a{
+            color: #33ccff;
+            
+            text-decoration: none;
+            padding: 10px;
+
+        }
+        .banner .nav_bar a:hover{
+            color: red;
+            font-family: 'Wu';
+            font-size: 25px;
+            transition: .7s;
+        }
+        .saying_block{
+            background-color: rgba(22, 22, 22,.6);
+        }
+        .saying_img{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            opacity: .6;
+        }
+        .saying_img img{
+            width: 1024px;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+        article{
+            width: 100%;
+            margin-bottom: 100px; 
+        }
+        article section{
+            width: 1024px;
+           margin: auto;
+        }
+        .about_ghost{
+            background-color: rgba(22, 22, 22, .6);
+            border-radius: 10px;
+            display: flex;
+        }
+        .about_img{
+            width: 500px;
+        }
+        .about_img img{
+            width: 100%;
+            vertical-align: top;
+        }
+        h1{
+            text-align: center;
+            color: rgba(255, 0, 0, .8);
+            font-family: 'Wu';
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .about_ghost_txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about_ghost_txt p {
+            color: rgba(255, 255, 255, .8);
+            padding: 0 50px;
+            font-size: 20px;
+        }
+        .strange_block{
+            background-color: rgba(22, 22, 22, .6);
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+        .culture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 50px;
+        }
+        .culture{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 150px 200px;
+        }
+        .culture_img{
+            width: 200px;
+            margin-right:100px ;
+        }
+        .culture_img:nth-child(2){
+            margin-right:0 ;
+            margin-left:100px ;
+        }
+        .culture_img img {
+            width: 100%;
+        }
+        .culture_txt{
+            width: 200px;
+        }
+        .culture h2{
+            font-size: 30px;
+            color: rgba(255, 255, 0, .8);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .culture p{
+            font-size: 20px;
+            color: rgba(255, 255, 255, .8);
+            margin-bottom: 15px;
+        }
+        .culture_txt a{
+            font-size: 20px;
+            color: #33ccff;
+            text-decoration: none;
+            float: right;
+        }
+        .culture_txt a:hover{
+            text-decoration: underline;
+        }
+        .Encyclopedia_block{
+            background-color: rgba(22, 22, 22, .6);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .Encyclopedia_block div p{
+            color: rgba(255, 255, 255, .8);
+            font-size: 20px;
+            /* margin: 0 20px; */
+            padding: 0 20px;
+        }
+        .Encyclopedia_bar{
+            margin: 100px 0;
+        }
+        .Encyclopedia_img h3{
+            color: rgba(255, 255, 255, .8);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .Encyclopedia_img{
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+        }
+        .Encyclopedia_img img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .Encyclopedia_bar{
+            display: flex;
+        }
+        .discuss_block{
+            background-color: rgba(22, 22, 22, .6);
+            border-radius: 10px;
+            padding: 50px 0;
+        }
+        .discuss_content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0 50px;
+        }
+        .discuss_txt{
+            width: 350px;
+            margin: 20px;
+        }
+        .discuss_txt p{
+            color: rgba(255, 255, 255, .8);
+            font-size: 20px;
+            clear: both;
+        }
+        .discuss_txt a{
+            color: #33ccff;
+            text-decoration: none;
+            float: right;
+            margin: 20px;
+        }
+        .discuss_txt a:hover{
+            text-decoration: underline;
+        }
+        .discuss_img{
+            width: 200px;
+        }
+        .discuss_img .discuss_info img{
+            float: left;
+            clear: both;
+        }
+        
+        .discuss_img .hot_discuss img{
+            float: right;
+            clear: both;
+        }
+        .end_img{
+            width: 300px;
+            margin: auto auto 100px;
+        }
+        .end_img img{
+            width: 100%;
+            vertical-align: top;
+        }
+
+        footer{
+            width: 100%; 
+            background-color: rgba(22, 22, 22, .6)
+        }
+        .connection_info{
+            width: 1200px;
+            margin:auto;
+            padding: 50px 0;
+           
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .connection_info_img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .connection_info_icon{
+            display: flex;
+        }
+        .connection_info_icon img{
+            margin: 10px;
+        }
+        .info p{
+            color: white;
+            margin: 20px 0;
+        }
+
+
+
+
+
+
+
+        .statement{
+            background-color: rgba(44, 44, 44, .6);
+        }
+        .statement p{
+            color: rgba(255, 255, 255, .8);
+            text-align: center;
+            padding: 10px;
+        }
+        
   
 
 
@@ -23,6 +299,176 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="subscription">
+            <a href="#">訂閱我們</a>
+            <a href="#">投稿</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="#">關於我們</a>
+            </nav>
+            
+        </div>
+    </header>
+
+
+    <article >
+        <section class="saying_block">
+            <div class="saying_img">
+                <img src="img/saying_img.jpg" alt="">
+            </div>
+        </section>
+    </article>
+
+
+    <article>
+        <section>
+            <div class="about_ghost">
+                <div class="about_ghost_txt">
+                    <h1>關於鬼怪</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, beatae.</p>
+                </div>
+            <div class="about_img">
+                <img src="img/about_img.png" alt="">
+            </div>
+        </div>
+        </section>
+    </article>
+
+    <article>
+        <section class="strange_block">
+            <h1>怪談</h1>
+            <div class="culture">
+                <div class="culture_img">
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/200/200/?random=1">
+                </div>
+                <div class="culture_txt">
+                    <h2>日本文化</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <a href="#">more...</a>
+                </div>
+            </div>
+            <div class="culture">
+                <div class="culture_txt">
+                    <h2>泰國文化</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <a href="#">more...</a>
+                </div>
+                <div class="culture_img">
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/200/200/?random=1">
+                </div>
+            </div>
+            <div class="culture">
+                <div class="culture_img">
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/200/200/?random=1">
+                </div>
+                <div class="culture_txt">
+                    <h2>台灣文化</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <a href="#">more...</a>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <article>
+        <section class="Encyclopedia_block">
+            <div>
+                <h1>鬼怪小百科</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Dolorem, harum.</p>
+            </div>
+            <div class="Encyclopedia_bar">
+                <div class="Encyclopedia_img">
+                    <h3>貓女</h3>
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/80/100/?random=1">
+                </div>
+                <div class="Encyclopedia_img">
+                    <h3>般若</h3>
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/80/100/?random=1">
+                </div>
+                <div class="Encyclopedia_img">
+                    <h3>煙煙羅</h3>
+                    <!-- <img src="" alt=""> -->
+                    <img src="https://picsum.photos/80/100/?random=1">
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+    <article>
+        <section class="discuss_block">
+            <h1>熱門討論</h1>
+            <div class="discuss_content">
+                <div class="discuss_img">
+                    <div class="discuss_info">
+                        <img src="https://picsum.photos/80/100/?random=1">
+                    </div>
+                    <div class="hot_discuss">
+                        <img src="https://picsum.photos/80/100/?random=1">
+                    </div>
+                </div>
+                <div>
+                    <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
+                    <a href="#">more...</a></div>
+                    <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
+                    <a href="#">more...</a></div>
+                </div>
+
+            </div>
+            
+        </section>
+    </article>
+
+    <div class="end_img">
+        <!-- <img src="" alt=""> -->
+        <img src="https://picsum.photos/300/300/?random=1">
+    </div>
+
+
+
+
+    <footer>
+        <div class="connection_info">
+            <div class="connection_info_img">
+                <div >
+                    <img src="https://picsum.photos/80/50/?random=1">
+                </div>
+                <div class="connection_info_icon">
+                    <img src="https://picsum.photos/20/20/?random=1">
+                    <img src="https://picsum.photos/20/20/?random=1">
+                    <img src="https://picsum.photos/20/20/?random=1">
+                    <img src="https://picsum.photos/20/20/?random=1">
+
+                </div>
+            </div>
+            <div class="info">
+                <p>電話：( 03 ) 345-1108</p>
+                <p>電話：( 03 ) 345-1108</p>
+                <p>電話：( 03 ) 345-1108</p>
+            </div>
+        </div>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
+    
     
     
 </body>
