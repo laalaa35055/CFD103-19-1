@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+font-family: 'Wu';
+src: url('font/onryou/onryou.TTF') format("truetype");} 
+body{
+    background-image: url(../img/background_image.jpg);
+}
+
+/* header 設定 */
+
+header{
+    width: 1024px;
+    margin: auto auto 10px auto;
+    background-color: transparent;
+}
+header .subscription{
+margin-top: 10px;
+    float: right;
+}
+header .subscription a{
+    color: #33ccff;
+    text-decoration: none;
+    padding: 10px;
+}
+.banner{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 3px solid #444; */
+}
+.banner .logo {
+    width: 120px;
+}
+.banner .logo img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.banner .nav_bar a{
+    color: #33ccff;
+    
+    text-decoration: none;
+    padding: 10px;
+
+}
+.banner .nav_bar a:hover{
+    color: red;
+    font-family: 'Wu';
+    font-size: 25px;
+    transition: .7s;
+}
+
+
+/* footer設定 */
+
+footer{
+    width: 100%; 
+    background-color: rgba(22, 22, 22, .6)
+}
+.connection_info{
+    width: 1200px;
+    margin:auto;
+    padding: 50px 0;
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.connection_info_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connection_info_icon{
+    display: flex;
+}
+.connection_info_icon img{
+    margin: 10px;
+}
+.info p{
+    color: white;
+    margin: 20px 0;
+}
+.statement{
+    background-color: rgba(44, 44, 44, .6);
+}
+.statement p{
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    padding: 10px;
+}

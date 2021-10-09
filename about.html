@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/init.css">
+    <title>about</title>
+    <style type="text/css">
+        article{
+            margin: 80px 0;
+        }
+        .about_block{
+            width: 1024px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: rgba(22, 22, 22,.6);
+            overflow: auto;
+        }
+        .about_block h1{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 30px;
+        }
+        .about_block h1::after{
+            display: block;
+            content: '';
+            background-color: white;
+            height: 1px;
+            margin: 30px 80px;
+        }
+        .about_block ul {
+            width: 650px;
+            margin: auto;
+        }
+        .about_block ul li{
+            color: white;
+            list-style: none;
+            
+            display: inline-block;
+        }
+        
+        .about_block ul li:nth-child(odd){
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            float: left;
+            clear: both;
+        }
+        .about_block ul li:nth-child(1){
+           margin-top: 50px;
+        }
+        .about_block ul li:nth-child(even){
+            max-width: 350px;
+            background-color: rgb(206, 196, 196);
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            color: black;
+            float: right;
+            clear: both;
+            margin: 50px 0 100px;
+        }
+        .about_block p {
+            clear: both;
+            text-align: center;
+            color: black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subscription">
+            <a href="contribution.html">投稿</a>
+            <a href="follow.html">訂閱我們</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="about.html">關於我們</a>
+            </nav>
+        </div>
+    </header>
+    
+    <article>
+        <section class="about_block">
+            <h1>關於我們</h1>
+            <div>
+                <ul>
+                    <li>設計理念</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita.</li>
+                    <li>設計理念</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita.</li>
+                    <li>設計理念</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita.</li>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </ul>
+                
+            </div>
+        </section>
+    </article>
+
+
+    <footer>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
+</body>
+</html>
