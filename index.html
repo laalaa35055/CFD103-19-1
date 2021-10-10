@@ -176,14 +176,39 @@
             text-decoration: underline;
         }
         .discuss_img{
-            width: 200px;
+            width: 400px;
+        }
+        .discuss_info{
+            position: relative;
+            opacity: .1;
         }
         .discuss_img .discuss_info img{
+            width: 222px;
             float: left;
             clear: both;
         }
-        
+        .discuss_img .discuss_info::after{
+            position: absolute;
+            display: inline-block;
+            content: '討論區';
+            color: #ccc;
+            top: -50px;
+            left:90px;
+        }       
+        .discuss_img .hot_discuss{
+            clear: both;
+            position: relative;
+        }
+        .discuss_img .hot_discuss::after{
+            position: absolute;
+            display: inline-block;
+            content: '電影資訊';
+            color: #ccc;
+            top: 220px;
+            left:260px;
+        }
         .discuss_img .hot_discuss img{
+            width: 222px;
             float: right;
             clear: both;
         }
@@ -320,10 +345,10 @@
             <div class="discuss_content">
                 <div class="discuss_img">
                     <div class="discuss_info">
-                        <img src="https://picsum.photos/80/100/?random=1">
+                        <img src="img/decorate/discuss.png" alt="討論區">
                     </div>
                     <div class="hot_discuss">
-                        <img src="https://picsum.photos/80/100/?random=1">
+                        <img src="img/decorate/movie_info.png" alt="電影資訊">
                     </div>
                 </div>
                 <div>
