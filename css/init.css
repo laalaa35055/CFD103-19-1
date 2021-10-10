@@ -12,20 +12,27 @@ body{
 /* header 設定 */
 
 header{
-    width: 1024px;
+    /* position: fixed; */
+    width: 100%;
+    /* left: calc(100% / 2 - 512px); */
     margin: auto auto 10px auto;
     background-color: transparent;
+    z-index: 99;
 }
 header .subscription{
-    margin: 10px 0;
-    float: right;
+    width: 1024px;
+    margin: 10px auto;
+    
 }
 header .subscription a{
+    float: right;
     color: #33ccff;
     text-decoration: none;
     padding: 10px;
 }
 .banner{
+    margin: auto;
+    width: 1024px;
     clear: both;
     display: flex;
     justify-content: space-between;
