@@ -6,53 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/init.css">
     <script src="js/config.js"></script>
-    <title>ghost_culture</title>
+    <title>ghost_game</title>
     <style type="text/css">
-        .ghost_culture_block{
-            width: 1200px;
+        .game_block{
+            width: 800px;
+            height: 800px;
             margin: 100px auto 50px;
-            display: flex;
-        }
-        .country{
-            width: 250px;
+            background-color: rgba(22, 22, 22, .6);
+            color: #ccc;
+            text-align: center;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .game_block div:nth-child(1){
+            width: 300px;
+            padding: 10px;
             background-color: rgba(33, 33, 33, .6);
             border-radius: 10px;
-            text-align: center;
+            margin-bottom: 10px;
         }
-        .country h3{
+        .game_block div:nth-child(1):hover{
+            background-color: #0079B7;
+            cursor: pointer;
+        }
+        .game_block div:nth-child(2){
+            width: 300px;
             padding: 10px;
-            font-size: 35px;
-            color: #ccc;
-            background-color: #208EB1;
+            background-color: rgba(33, 33, 33, .6);
             border-radius: 10px;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+            
         }
-        .country a{
-            color: #ccc;
-            text-decoration: none;
-            font-size: 20px;
-            padding: 10px 0;
-            border-bottom: 1px dashed #ccc;
-        }
-        .country a:hover{
-            background-color: #ccc;
-            border-radius: 10px;
-            color: black;
-        }
-        .ghost_culture_content{
-            flex-grow: 1;
-            background-color: rgba(22, 22, 22, .6);
+        .game_block div:nth-child(2):hover{
+            background-color: #0079B7;
+            cursor: pointer;
         }
 
     </style>
+
 </head>
 <body>
     <header>
         <div class="subscription">
-            <a href="contribution.html">投稿</a>
             <a href="follow.html">訂閱我們</a>
+            <a href="contribution.html">投稿</a>
         </div>
         <div class="banner">
             <div class="logo">
@@ -75,26 +75,17 @@
     </header>
 
     <article>
-        <section class="ghost_culture_block">
-            <div class="country">
-                <h3>Country</h3>
-                <a href="#">日本</a>
-                <a href="#">泰國</a>
-                <a href="#">台灣</a>
-            </div>
-            <div class="ghost_culture_content">
-
-            </div>
+        <section class="game_block">
+            <div>開始遊戲</div>
+            <div>規則說明</div>
         </section>
     </article>
 
-
-
-
-
-
-
-
+    <footer>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
     
 </body>
 </html>
