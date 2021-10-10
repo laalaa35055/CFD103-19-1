@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/init.css">
+    <title>discuss</title>
+    <style type="text/css">
+        .discuss_block{
+            width: 1024px;
+            margin: 100px auto 30px;
+        }
+        .select_block{
+            padding: 15px 0;
+            background-color: rgba(22, 22, 22, .6);
+        }
+
+        .select_block span:nth-child(1){
+            margin-left:10px;
+        }
+        .select_block span{
+            padding: 10px;
+            border-radius: 10px;
+            color: #ccc;
+            background-color: rgba(33, 33, 33, .6);
+            margin-right:10px;
+        }
+        .select_block span:hover{
+            border: 1px solid #33ccff;
+            color: #33ccff;
+            cursor: pointer;
+        }
+        .data_block{
+            background-color: rgba(44, 44, 44, .6);
+            margin-top: 10px;
+            /* border-radius: 10px; */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .data_block span{
+            color: #ccc;
+            text-align: center;
+        }
+        .data_block span:nth-child(1){
+            flex-grow: 3;
+        }
+        .data_block span:nth-child(2){
+            flex-grow: 1;
+        }
+        .data_block span:nth-child(3){
+            flex-grow: 1;
+        }
+        .discuss_content{
+            height: 945px;
+            border-radius: 10px;
+            background-color: rgba(22, 22, 22, .6);
+        }
+        .data_content{
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            color: #ccc;
+            border-bottom: 1px dashed #444;
+        }
+        .data_content div:nth-child(1){
+            text-align: left;
+            width: 557.6px;
+        }
+        .data_content div:nth-child(2){
+            width: 207.21px;
+        }
+        .data_content div:nth-child(3){
+            width: 239.21px;
+        }
+        .data_title .topic{
+            color: #33ccff;
+            text-decoration: none;
+        }
+        .data_title .topic:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .type{
+            color: #ccc;
+        }
+        #page_select{
+            width: 1024px;
+            margin: 0 auto 100px;
+
+        }
+        #page_select div{
+            margin: 0 10px;
+            color: #ccc;
+            padding: 5px 8px;
+            float: right;
+            border-radius: 8px;
+            background-color: rgba(44, 44, 44, .6);
+        }
+        #page_select div:nth-child(6){
+            background-color: rgba(88, 88, 88, .6);
+        }
+        #page_select a{
+            font-size: 12px;
+            color: #ccc;
+            text-decoration: none   ;
+        }
+        #page_select div a:hover{
+            text-decoration: underline;
+            color: #33ccff;
+        }
+        footer{
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subscription">
+            <a href="contribution.html">投稿</a>
+            <a href="follow.html">訂閱我們</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="#">鬼怪小百科</a>
+                <a href="#">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="about.html">關於我們</a>
+            </nav>
+        </div>
+    </header>
+
+    <article class="discuss_block">
+        <div class="select_block">
+            <span onclick="judge(this.innerHTML)">全部</span>
+            <span onclick="judge(this.innerHTML)">新聞</span>
+            <span onclick="judge(this.innerHTML)">故事</span>
+            <span onclick="judge(this.innerHTML)">地點</span>
+        </div>
+        <section class="discuss_content">
+            <div class="data_block">
+                <span>主題</span>
+                <span>人氣</span>
+                <span>發表主題</span>
+            </div>
+            <div class="data_content " id="block_number_1">
+                <div class="data_title"> 
+                    <span class="type number_1">【 新聞 】</span>
+                    <a class="topic" href="#">超毛畫面曝光！開特斯拉到無人墓園 下秒出現詭異人影朝他暴衝</a>
+                </div>
+                <div class="hot">1</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content" id="block_number_2">
+                <div class="data_title"> 
+                    <span class="type number_2">【 故事 】</span>
+                    <a class="topic" href="#">高雄某山上的走失驚魂記</a>
+                </div>
+                <div class="hot">19</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content" id="block_number_3">
+                <div class="data_title"> 
+                    <span class="type number_3">【 地點 】</span>
+                    <a class="topic" href="#">日本 「沖繩戰壕」</a>
+                </div>
+                <div class="hot">12</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_4">
+                <div class="data_title"> 
+                    <span class="type number_4">【 新聞 】</span>
+                    <a class="topic" href="#">愛看鬼片也不敢看！直播主空屋探險「撞鬼」當場嚇哭</a>
+                </div>
+                <div class="hot">154</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_5">
+                <div class="data_title"> 
+                    <span class="type number_5">【 故事  】</span>
+                    <a class="topic" href="#">晚上騎車，路不熟別亂入！</a>
+                </div>
+                <div class="hot">1300</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_6">
+                <div class="data_title"> 
+                    <span class="type number_6">【 地點 】</span>
+                    <a class="topic" href="#">泰國 「帕席桑碧寺」</a>
+                </div>
+                <div class="hot">188</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_7">
+                <div class="data_title"> 
+                    <span class="type number_7">【 地點 】</span>
+                    <a class="topic" href="#">越南 「昆島戰俘營」</a>
+                </div>
+                <div class="hot">1884</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_8">
+                <div class="data_title"> 
+                    <span class="type number_8">【 地點 】</span>
+                    <a class="topic" href="#">印度「迪烏寂靜之塔」</a>
+                </div>
+                <div class="hot">91</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_9">
+                <div class="data_title"> 
+                    <span class="type number_9">【 地點 】</span>
+                    <a class="topic" href="#">菲律賓 「克拉克空軍醫院」</a>
+                </div>
+                <div class="hot">15</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_10">
+                <div class="data_title"> 
+                    <span class="type number_10">【 地點 】</span>
+                    <a class="topic" href="#">印尼 「千重門」</a>
+                </div>
+                <div class="hot">15</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_11">
+                <div class="data_title"> 
+                    <span class="type number_11">【 地點 】</span>
+                    <a class="topic" href="#">香港 「達德學校」</a>
+                </div>
+                <div class="hot">199</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_12">
+                <div class="data_title"> 
+                    <span class="type number_12">【 地點 】</span>
+                    <a class="topic" href="#">台灣「綠島監獄」</a>
+                </div>
+                <div class="hot">211</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_13">
+                <div class="data_title"> 
+                    <span class="type number_13">【 故事 】</span>
+                    <a class="topic" href="#">晚上騎車，路不熟別亂入！</a>
+                </div>
+                <div class="hot">111</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_14">
+                <div class="data_title"> 
+                    <span class="type number_14">【 故事 】</span>
+                    <a class="topic" href="#">廢棄醫院探險聽到怪聲音</a>
+                </div>
+                <div class="hot">154</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_15">
+                <div class="data_title"> 
+                    <span class="type number_15">【 新聞 】</span>
+                    <a class="topic" href="#">高中生不信邪開窗看「送肉粽」 深夜父母破門撞見這一幕嚇壞！</a>
+                </div>
+                <div class="hot">199</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_16">
+                <div class="data_title"> 
+                    <span class="type number_16">【 新聞 】</span>
+                    <a class="topic" href="#">男子誤租「凶房」被阿飄纏上 車禍身亡前告訴學弟「她找來了」</a>
+                </div>
+                <div class="hot">187</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_17">
+                <div class="data_title"> 
+                    <span class="type number_17">【 新聞 】</span>
+                    <a class="topic" href="#">靈異體質英國婦人逛兒童博物館 宣稱拍到2中國女鬼</a>
+                </div>
+                <div class="hot">155</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_18">
+                <div class="data_title"> 
+                    <span class="type number_18">【 故事 】</span>
+                    <a class="topic" href="#">夜晚醫院裡的呢喃聲</a>
+                </div>
+                <div class="hot">1556</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_19">
+                <div class="data_title"> 
+                    <span class="type number_19">【 故事 】</span>
+                    <a class="topic" href="#">香港的那個房間與詭異的打掃阿姨</a>
+                </div>
+                <div class="hot">15</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+            <div class="data_content " id="block_number_20">
+                <div class="data_title"> 
+                    <span class="type number_20">【 新聞 】</span>
+                    <a class="topic" href="#">接到「鬼來電」怎麼辦？ 專家這樣說...</a>
+                </div>
+                <div class="hot">1565</div>
+                <div class="time">2021-10-10 08:00</div>
+            </div>
+
+          
+        </section>
+    </article>
+
+
+
+    <div id="page_select">
+        <div ><a href="#">下一頁</a></div>
+        
+        <div class="color"><a onclick="color(this);" href="#">5</a></div>
+        <div class="color"><a onclick="color(this);" href="#">4</a></div>
+        <div class="color"><a onclick="color(this);" href="#">3</a></div>
+        <div class="color"><a onclick="color(this);" href="#">2</a></div>
+        <div class="color"><a onclick="color(this);" href="#">1</a></div>
+        <div ><a href="#">上一頁</a></div>
+    </div>
+
+
+
+    <footer>
+        <div class="statement">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>

@@ -40,3 +40,36 @@ function show_hide(){
         hide_info.innerHTML = "已經到底了！！";
     }
 }
+function judge(a){
+    var type  = document.getElementsByClassName("type");
+    var arr = new Array(); // 刪除對象
+    all_show();
+    for(var i=0;i<type.length;i++){
+        if(type[i].innerHTML.substr(1,3) !== " " +a && a !== "全部"){
+            arr.push(type[i]);
+        }
+        else if(a === "全部"){
+            all_show();
+            break;
+        }
+    }
+    for(var i=0;i<arr.length;i++){
+        var n = arr[i].getAttribute("class").substr(12);
+        var block_number = document.getElementById("block_number_" + n);
+        block_number.style.display = "none";
+    }
+}
+function all_show(){
+    var type  = document.getElementsByClassName("data_content");
+
+    for(var i=0;i<type.length;i++){
+        type[i].style.display = "flex";
+    }
+}
+function color(a){
+    var color = document.getElementsByClassName("color"); 
+    for(var i =0;i<color.length;i++){
+        color[i].style.backgroundColor = "rgba(44, 44, 44, .6)";
+    }
+    a.parentNode.style.backgroundColor = "rgba(88, 88, 88, .6)";
+}
