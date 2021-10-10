@@ -73,3 +73,12 @@ function color(a){
     }
     a.parentNode.style.backgroundColor = "rgba(88, 88, 88, .6)";
 }
+function discuss_bar_block(){
+    var discuss_bar_block = document.getElementById("discuss_bar_block");
+    if(discuss_bar_block.style.display == "" || discuss_bar_block.style.display == "none"){
+        discuss_bar_block.style.display = "flex";
+    }
+    else{
+        discuss_bar_block.style.display = "none"
+    }
+}

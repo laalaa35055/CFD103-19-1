@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/init.css">
+    <title>Encyclopedia</title>
+    <style type="text/css">
+        .search_block{
+            width: 100%;
+            background-color: rgba(33, 33, 33, .6);
+        }
+        .search_block .search{
+            width: 1024px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            padding: 15px 0;
+        }
+        .search_block .search h1{
+            font-family: 'Wu';
+            color: red;
+            margin-right: 15px;
+        }
+        .search input{
+            list-style: none;
+            /* border: 1px solid white; */
+            border: none;
+            margin: 0 10px;
+            width: 150px;
+            height: 25px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .search button{
+            list-style: none;
+            border: none;
+            padding: 5px 10px;
+            background-color: #0079B7;
+            border-radius: 5px;
+            color: #ccc;
+        }
+        .encyclopedia_block{
+            display: flex;
+            justify-content: center;
+            width: 1200px;
+            margin: 100px auto 30px;
+        }
+        .encyclopedia_select{
+            width: 250px;
+            background-color: rgba(33, 33, 33,1);
+        }
+        .encyclopedia_select h2{
+            font-size: 35px;
+            color: #ccc;
+            text-align: center;
+            padding: 10px;
+            background-color: #0079B7;
+            border-radius: 10px;
+        }
+        .encyclopedia_select h3{
+            font-size: 25px;
+            color: #ccc;
+            text-align: center;
+            padding: 10px;
+            margin-top: 25px;
+        }
+        .encyclopedia_select h3::after{
+            font-size: 25px;
+            display: block;
+            content: '';
+            height: 1px;
+            margin: 10px;
+            background-color: #ccc;
+        }
+        .encyclopedia_select div{
+            color: #ccc;
+            padding: 10px;
+            text-align: start;
+            font-size: 18px;
+        }
+        .encyclopedia_select input{
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .encyclopedia_content{
+            padding: 20px;
+            width: 950px;
+            background-color: rgba(22, 22, 22, .6);
+            text-align: center; 
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .encyclopedia_content .ghost_info{
+            display: flex;
+            flex-direction: column; 
+            align-items:center;
+        }
+        .ghost_img{
+            width: 150px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .ghost_img img{
+            width: 100%;
+            height: 200px;
+        }
+        .ghost_info{
+            margin: 30px 39px;
+        }
+        .ghost_info h3{
+            color: #ccc;
+        }
+
+        #page_select{
+            width: 1024px;
+            margin: 0 auto 100px;
+
+        }
+        #page_select div{
+            margin: 0 10px;
+            color: #ccc;
+            padding: 5px 8px;
+            float: right;
+            border-radius: 8px;
+            background-color: rgba(44, 44, 44, .6);
+        }
+        #page_select div:nth-child(6){
+            background-color: rgba(88, 88, 88, .6);
+        }
+        #page_select a{
+            font-size: 12px;
+            color: #ccc;
+            text-decoration: none   ;
+        }
+        #page_select div a:hover{
+            text-decoration: underline;
+            color: #33ccff;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="subscription">
+            <a href="contribution.html">投稿</a>
+            <a href="follow.html">訂閱我們</a>
+        </div>
+        <div class="banner">
+            <div class="logo">
+                <!-- <img src="" alt=""> -->
+                <img src="https://picsum.photos/200/100/?random=1">
+            </div>
+            <nav class="nav_bar">
+                <a href="#">怪談</a>
+                <a href="ghost_encyclopedia.html">鬼怪小百科</a>
+                <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
+                <a href="#">妖怪池</a>
+                <a href="about.html">關於我們</a> 
+                <div id="discuss_bar_block">
+                    <a href="discuss.html">討論區</a>
+                    <a href="movie_info.html">電影資訊</a>
+                </div>
+            </nav>
+        </div>            
+        </div>
+    </header>
+    <div class="search_block">
+        <div class="search">
+            <h1>百科搜尋：</h1>
+            <input type="text" placeholder="Search...">
+            <button>搜尋</button>
+        </div>
+    </div>
+    <article>
+        <section class="encyclopedia_block">
+            <div class="encyclopedia_select">
+                <h2>篩選</h2>
+                <h3>地區</h3>
+                <div class="check_block">
+                    <input type="checkbox" ><span>日本</span><br>
+                    <input type="checkbox" ><span>泰國</span><br>
+                    <input type="checkbox" ><span>台灣</span>
+                </div>
+            </div>
+
+            <div class="encyclopedia_content">
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/1.jpg" alt="">
+                    </div>
+                    <h3>貓又</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/2.jpg" alt="">
+                    </div>
+                    <h3>姑獲鳥</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/3.jpg" alt="">
+                    </div>
+                    <h3>般若</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/4.jpg" alt="">
+                    </div>
+                    <h3>煙煙羅</h3>
+                </div>
+           
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/5.jpg" alt="">
+                    </div>
+                    <h3>木魅</h3>
+                </div>
+           
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/6.jpg" alt="">
+                    </div>
+                    <h3>天狗</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/7.jpg" alt="">
+                    </div>
+                    <h3>橋姬</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/8.jpg" alt="">
+                    </div>
+                    <h3>雪女</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/9.jpg" alt="">
+                    </div>
+                    <h3>座敷童子</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/10.jpg" alt="">
+                    </div>
+                    <h3>青行燈</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/11.jpg" alt="">
+                    </div>
+                    <h3>毛倡妓</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/12.jpg" alt="">
+                    </div>
+                    <h3>文車妖妃</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/13.jpg" alt="">
+                    </div>
+                    <h3>二口女</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/14.jpg" alt="">
+                    </div>
+                    <h3>河童</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/15.jpg" alt="">
+                    </div>
+                    <h3>入內雀</h3>
+                </div>
+                <div class="ghost_info">
+                    <div class="ghost_img">
+                        <img src="img/ghost/16.jpg" alt="">
+                    </div>
+                    <h3>鬼一口</h3>
+                </div>
+            </div>
+        </section>
+    </article>
+    <div id="page_select">
+        <div ><a href="#">...</a></div>
+        <div class="color"><a onclick="color(this);" href="#">5</a></div>
+        <div class="color"><a onclick="color(this);" href="#">4</a></div>
+        <div class="color"><a onclick="color(this);" href="#">3</a></div>
+        <div class="color"><a onclick="color(this);" href="#">2</a></div>
+        <div class="color"><a onclick="color(this);" href="#">1</a></div>
+    </div>
+
+    
+</body>
+</html>
