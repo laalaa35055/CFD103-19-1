@@ -20,8 +20,9 @@ header{
     z-index: 99;
 }
 header .subscription{
-    width: 1024px;
+    width: 1200px;
     margin: 10px auto;
+    padding-bottom: 50px;
     
 }
 header .subscription a{
@@ -32,7 +33,7 @@ header .subscription a{
 }
 .banner{
     margin: auto;
-    width: 1024px;
+    width: 1200px;
     clear: both;
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,8 @@ header .subscription a{
     border-radius: 10px;
 }
 .banner .logo {
-    width: 120px;
+    width: 150px;
+    margin-left: 20px;
 }
 .banner .logo img{
     width: 100%;
