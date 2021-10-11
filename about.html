@@ -15,7 +15,7 @@
         .about_block{
             width: 1024px;
             margin: auto;
-            border-radius: 10px;
+            border-radius: 20px;
             background-color: rgba(22, 22, 22,.6);
             overflow: auto;
         }
@@ -75,6 +75,57 @@
             border-radius: 10px;
             margin: 50px 0;
         }
+        .about_we{
+            color: white;
+            margin: 50px auto 50px;
+            width: 1024px;
+            background-color: rgba(22, 22, 22,.6);
+            border-radius: 20px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .txt{
+            margin: 50px 50px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .txt p{
+            margin: 0 10px;
+        }
+        .txt .info_we img{
+            height: 15px;
+            margin-right: 10px;
+        }
+        .info_we{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            line-height: 20px;
+
+        }
+        .txt h2{
+            margin: 0;
+            padding-bottom: 35px;
+            padding-left: 100px;
+        }
+        .map{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .map_img{
+            width: 450px;
+        }
+        .map_img img{
+            width: 100%;
+            vertical-align: top;
+        }
+
 
     </style>
 </head>
@@ -128,6 +179,38 @@
         <a href="#" class="fab fa-twitter"></a>
         <a href="#">▲</a>
     </div>
+
+    <article>
+        <section class="about_we">
+            <div class="txt">
+                <h2>聯絡我們</h2>
+                <div class="info_we fas fa-phone-alt">
+                    <p>電話：(03)435-1108</p>
+                </div>
+                <div class="info_we fas fa-envelope">
+                    <p>E-mail：devillonely9@gmail.com</p>
+                </div>
+                <div class="info_we fas fa-calendar-alt">
+                    <p>營業時間 : 週一至週日 AM.10:00- PM.18:00</p>
+                </div>
+                <div class="info_we fas fa-map-marker-alt">
+                    <p>地址 : 桃園市中壢區復興路46號</p>
+                </div>
+            </div>
+    
+            <div class="map">
+                <div class="map_img">
+                    <img src="img/decorate/google_map.png" alt="">
+                    <!-- <img src="https://picsum.photos/300/200/?random=1"> -->
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+
+
     <footer>
         <div class="statement">
             <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>

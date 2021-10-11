@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/init.css">
     <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
     <script src="js/config.js"></script>
-    <title>Black World</title>
+    <title>墨 x 怪</title>
     <style type="text/css">   
         .saying_block{
+            margin: 50px auto auto;
             background-color: rgba(22, 22, 22,.6);
         }
         .saying_img{
+            margin: auto;
             width: 1024px;
             display: flex;
             justify-content: center;
@@ -110,6 +112,16 @@
             text-decoration: none;
             float: right;
         }
+        .culture_txt p{
+            text-indent: 2em;
+            width: 250px;
+            white-space: normal;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
         .culture_txt a:hover{
             text-decoration: underline;
         }
@@ -120,6 +132,7 @@
             align-items: center;
             border-radius: 10px;
         }
+
         .Encyclopedia_block div p{
             color: rgba(255, 255, 255, .8);
             font-size: 20px;
@@ -161,7 +174,7 @@
         .discuss_block{
             background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
-            padding: 50px 0;
+            padding: 50px 0 50px;
         }
         .discuss_content{
             display: flex;
@@ -177,6 +190,10 @@
             color: rgba(255, 255, 255, .8);
             font-size: 20px;
             clear: both;
+            margin-bottom: 30px;
+        }
+        .discuss_txt p:hover{
+            text-decoration: underline;
         }
         .discuss_txt a{
             color: #33ccff;
@@ -198,6 +215,12 @@
             width: 222px;
             float: left;
             clear: both;
+        }
+        .discuss_img .discuss_info img:hover{
+            cursor: pointer;
+        }
+        .discuss_img .hot_discuss img:hover{
+            cursor: pointer;
         }
         .discuss_img .discuss_info::after{
             position: absolute;
@@ -226,11 +249,12 @@
         }
         .end_img{
             width: 1024px;
-            margin: auto auto 100px;
-            opacity: 0.6;
+            margin: 50px auto;
+            opacity: 0.2;
         }
         .end_img img{
             width: 100%;
+            border-radius: 50%;
             vertical-align: top;
         }
 
@@ -242,7 +266,6 @@
     </style>
 </head>
 <body>
-    
     <header>
         <div class="subscription">
             <a href="follow.html">訂閱我們</a>
@@ -266,8 +289,6 @@
             </nav>
         </div>             
     </header>
-
-
     <article >
         <section class="saying_block">
             <div class="saying_img">
@@ -275,8 +296,6 @@
             </div>
         </section>
     </article>
-
-
     <article>
         <section>
             <div class="about_ghost">
@@ -293,7 +312,6 @@
         </div>
         </section>
     </article>
-
     <article>
         <section class="strange_block">
             <h1>怪談</h1>
@@ -304,14 +322,14 @@
                 </div>
                 <div class="culture_txt">
                     <h2>日本文化</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <p>對日本人而言，神代表絕對的正面，而鬼則是與地獄、暗黑勢力結合，會危害人類甚至吃人的怪物。妖怪，就介於「神」跟「鬼」之間。凡是人類死後無形體的「冤魂」、修行成精的「動物」，甚至久置荒廢的廢棄物，只要是人類無法解釋，又看不見也摸不到的魔、靈、精、怪，全部統稱為「妖怪」。</p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
             <div class="culture">
                 <div class="culture_txt">
                     <h2>泰國文化</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <p>在泰國民間信仰中，祖先、家庭佔有相當重要的地位。泰國人吵架不管吵多兇都不會辱罵對方的父母，而祖先的信仰也常與運勢有關，好比他們認為祖先也有可能轉世投胎成為貓狗，所以在門口放碗食物、放杯乾淨的水給流浪動物，會為家人帶來好運。在已除魅的現代社會，雖然有些信仰被視為迷信，但也正因為有這些信仰，泰國人的善良才能如此迷人。至少，不像台灣有些人會虐待動物，不是嗎？</p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
                 <div class="culture_img">
@@ -326,19 +344,17 @@
                 </div>
                 <div class="culture_txt">
                     <h2>台灣文化</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
+                    <p>臺灣島嶼山海之間，曾繁衍許多妖魅鬼神、眾多魔幻怪物，也有奇譚異事流傳諸野。而在四百多年以前，漢人、西方人、日本人相繼來臺定居、遊歷，也將森羅萬妖的傳說謄抄於冊，而原住民族則以口傳神話故事。</p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
         </section>
     </article>
-
-
     <article>
         <section class="Encyclopedia_block">
             <div>
                 <h1>鬼怪小百科</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Dolorem, harum.</p>
+                <p>日式、泰式、台式、各國鬼怪<br>哪一種的類型令你害怕呢？...</p>
                 <a href="ghost_encyclopedia.html">more...</a>
             </div>
             <div class="Encyclopedia_bar">
@@ -357,9 +373,6 @@
             </div>
         </section>
     </article>
-
-
-
     <article>
         <section class="discuss_block">
             <h1>熱門討論</h1>
@@ -373,19 +386,20 @@
                     </div>
                 </div>
                 <div>
-                    <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
-                    <a href="movie_info.html">more...</a></div>
-                    <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
-                    <a href="movie_info.html">more...</a></div>
+                    <div class="discuss_txt">
+                        <p>溫子仁的驚悚新作《疾厄》背後，其實有段暖心的動人故事...</p>
+                        <p>《疾厄》：這是一封獻給恐怖片的情書，也是一則掙脫禁錮的女性黑暗超英雄故事...</p>
+                        <a href="movie_info.html">more...</a>
+                    </div>
                 </div>
             </div>
             
         </section>
     </article>
-
     <div class="end_img">
         <img src="img/sky.jpeg" alt="">
     </div>
+    
 
     <div id="right_function">
         <a href="#" class="fab fa-facebook-square"></a>
