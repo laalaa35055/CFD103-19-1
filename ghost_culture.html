@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/init.css">
     <script src="js/config.js"></script>
     <title>ghost_culture</title>
@@ -42,17 +43,64 @@
             color: black;
         }
         .ghost_culture_content{
+            padding: 50px 10px;
             flex-grow: 1;
             background-color: rgba(22, 22, 22, .6);
         }
+        .ghost_culture_content h1{
+            text-align: center;
+            color: red;
+            font-size: 50px;
+            font-family: 'Wu';
+        }
+        .ghost_culture_content h1::after{
+            margin: 30px 30px 80px 30px;
+            display: block;
+            content: '';
+            height: 1px;
+            background-color: #ccc;
+        }
+        .ghost_culture_content h3{
+            color: #ccc;
+            padding-left: 30px;
+            font-size: 30px;
+            margin: 100px 0 50px;
+        }
+        .j_culture p{
+            margin:30px 100px;
+            /* letter-spacing: 1px; */
+            display: inline-block;
+            border-radius: 10px;
+            color: #ccc;
+            padding: 20px;
+            background-color: rgba(44, 44, 44, .6);
+        }
+        .culture_img{
+            width: 600px;
+            margin: 100px auto 10px;
+        }
+        .culture_img img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .comment{
+            width: 500px;
+            margin: auto auto 100px;
+            text-align: center;
+        }
+        .comment span{
+            color: #ccc;
+            margin: 10px;
+        }
+
 
     </style>
 </head>
 <body>
     <header>
         <div class="subscription">
-            <a href="contribution.html">投稿</a>
             <a href="follow.html">訂閱我們</a>
+            <a href="contribution.html">投稿</a>
         </div>
         <div class="banner">
             <div class="logo">
@@ -78,12 +126,59 @@
         <section class="ghost_culture_block">
             <div class="country">
                 <h3>Country</h3>
-                <a href="#">日本</a>
-                <a href="#">泰國</a>
-                <a href="#">台灣</a>
+                <a href="#">日本文化</a>
+                <a href="#">泰國文化</a>
+                <a href="#">台灣文化</a>
             </div>
             <div class="ghost_culture_content">
-
+                <div class="j_culture">
+                    <h1>日本文化</h1>
+                    <h3>一 、 起源</h3>
+                    <p>日本的妖怪文化最初還是起源於民間傳說。</p>
+                    <p>妖怪的產生起初是出於對自然，對動物的敬畏之心，人們把自己看不見、摸不著、無法控制的力量統統稱為妖怪。</p>
+                    <h3>二 、 古代鬼怪</h3>
+                    <p>日本是個水域文化國家，很多傳說都是與水相關。</p>
+                    <p>比如：豆子婆婆，就是用篩子在水中撈人來吃的妖精;橋女則是為情投水自盡的女鬼;而活躍於江河之中的河童</p>
+                    <p>同時，日本又是一個多山的國家，所以傳說中住在山上的妖怪也不少。</p>
+                    <p>比如：雪女，據說是被情人拋棄於雪山的女子所化，因此經常誘惑上山的行人，凡對其動情的人便會凍死。</p>
+                    <h3>三 、 發展</h3>
+                    <p>在平安京時代（公元794年-1192年），妖怪文化進入到一個飛速發展的時期。</p>
+                    <p>室町時代（公元1336年-1573年），日本社會開始走向安定，人們不再向妖怪鬼神乞求庇佑，然而妖怪文化並沒有因此墮落，反而更加昌盛起來。</p>
+                    <p>江戶時代（公元1603年-1867年），日本妖怪文化達到一個黃金鼎盛時期，怪談由民間走進了藝術與文學。</p>
+                    <p>最有名的是《百鬼夜行繪卷》，描畫了琵琶、傘、木魚、鍋等各種舊物品因為要被人們丟棄，一怒之下變成了各種各樣的妖怪半夜出來游行的場景。</p>
+                    <div class="culture_img"><img src="img/j_1.jpeg" alt=""></div>
+                    <div class="comment">
+                        <span>▲ 此畫被譽為日本妖怪畫的鼻祖</span>
+                    </div>
+                    <p>隨著戰後日本動漫的迅速發展，日本妖怪的形像變得可愛 且擬人化了。</p>
+                    <h3>四 、 日本知名鬼怪</h3>
+                    <p>最早就是出自中國的《山海經》：「陰山，有獸焉，其狀如狸而白首，名曰天狗，其音如榴榴，可以御兇」。</p>
+                    <p>後來在中世紀與日本佛教中的天魔、神教中的山神等結合起來，才成了具有日本特色的天狗形象。</p>
+                    <div class="culture_img">
+                        <img src="img/j_2.jpg" alt="">
+                    </div>
+                    <div class="comment">
+                        <span>▲ 在日本名氣最高的天狗</span>
+                    </div>
+                    <p>日本傳說中的河童是一種水陸兩棲的妖怪，全身滑膩、長著鳥類一樣的嘴、青蛙一樣的四肢、背著烏龜一樣的殼、身上長滿了弓箭無法穿透的堅硬鱗片。</p>
+                    <p>古時日本人便對水懷有敬畏之心，因此大部分的地區都相信河童的存在，並且將其作為河神而頂禮膜拜。</p>
+                    <div class="culture_img">
+                        <img src="img/j_3.jpg" alt="">
+                    </div>
+                    <div class="comment">
+                        <span>▲ 河童</span>
+                    </div>
+                    <p>身長約六米，虎背熊腰，頭頂五個大犄角，據說有15隻眼睛，以飲血食肉為嗜好，一般穿著個格子織物的外衣，腰間系野獸皮。</p>
+                    <p>酒吞童子是平安時代最出名的妖怪，曾為統領眾妖的百鬼之王。</p>
+                    <div class="culture_img">
+                        <img src="img/j_4.jpg" alt="">
+                    </div>
+                    <div class="comment">
+                        <span>▲ 酒吞童子</span>
+                    </div>
+                    <h3>結語</h3>
+                    <p>古時候的人們終歸是妖魔鬼怪抱有畏懼之心的，所以對它們的描繪總是偏向於恐怖暴戾，而非現在的遊戲作品中展現的這麼美好可愛，可見現代人對鬼怪認知的轉變。</p>
+                </div>
             </div>
         </section>
     </article>
@@ -94,7 +189,17 @@
 
 
 
+    <div id="right_function">
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-instagram">  </a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#">▲</a>
+    </div>
 
-    
+    <footer>
+        <div class="statement">
+            <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
+        </div>
+    </footer>
 </body>
 </html>

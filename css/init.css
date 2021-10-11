@@ -99,31 +99,6 @@ footer{
     width: 100%; 
     background-color: rgba(22, 22, 22, .6)
 }
-.connection_info{
-    width: 1200px;
-    margin:auto;
-    padding: 50px 0;
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.connection_info_img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.connection_info_icon{
-    display: flex;
-}
-.connection_info_icon img{
-    margin: 10px;
-}
-.info p{
-    color: white;
-    margin: 20px 0;
-}
 .statement{
     background-color: rgba(44, 44, 44, .6);
 }
@@ -131,4 +106,37 @@ footer{
     color: rgba(255, 255, 255, .8);
     text-align: center;
     padding: 10px;
+}
+
+/* right_funcion */
+
+
+#right_function{
+    width: 50px;
+    height: 200px;
+    background-color: rgba(55, 55, 55, .6);
+    position: fixed;
+    right: 80px;
+    bottom: 200px;
+}
+#right_function a{
+    color: #ccc;
+    border-bottom: 1px solid rgba(88, 88, 88, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#right_function a:hover{
+    background-color: #0079B7;
+    color: #ccc;
+    cursor: pointer;
+}
+#right_function a:nth-of-type(4){
+    border-bottom: none;
 }

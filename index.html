@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/init.css">
+    <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
     <script src="js/config.js"></script>
     <title>Black World</title>
     <style type="text/css">   
@@ -32,12 +33,13 @@
            margin: auto;
         }
         .about_ghost{
-            background-color: rgba(22, 22, 22, 1);
+            padding: 50px 10px;
+            background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
             display: flex;
         }
         .about_img{
-            width: 500px;
+            width: 450px;
         }
         .about_img img{
             width: 100%;
@@ -45,12 +47,17 @@
         }
         h1{
             text-align: center;
-            color: rgba(255, 0, 0, .8);
+            color: rgba(255, 0, 0, .7);
             font-family: 'Wu';
             font-size: 50px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         .about_ghost_txt{
+            width: 500px;
+            letter-spacing: 1px;
+            text-indent: 2em;
+            line-height: 35px;
+            text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -118,6 +125,16 @@
             font-size: 20px;
             /* margin: 0 20px; */
             padding: 0 20px;
+        }
+        .Encyclopedia_block div a{
+            margin-top: 20px;
+            float: right;
+            text-decoration: none;
+            color: #33ccff;
+            font-size: 20px;
+        }
+        .Encyclopedia_block div a:hover{
+            text-decoration: underline;
         }
         .Encyclopedia_bar{
             margin: 100px 0;
@@ -216,6 +233,12 @@
             width: 100%;
             vertical-align: top;
         }
+
+
+
+        
+
+
     </style>
 </head>
 <body>
@@ -227,7 +250,7 @@
         </div>
         <div class="banner">
             <div class="logo">
-                <img src="666.png" alt="">
+                <a href="index.html"><img src="666.png" alt=""></a>
                 <!-- <img src="https://picsum.photos/200/100/?random=1"> -->
             </div>
             <nav class="nav_bar">
@@ -260,7 +283,10 @@
             <div class="about_ghost">
                 <div class="about_ghost_txt">
                     <h1>關於鬼怪</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, beatae.</p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloribus?</p> -->
+                    <p>
+                        古時，科學落後、思維封閉，有許多「超自然」的現象無法解釋，人們將這些歸因於神靈鬼怪的存在，漸漸地形成一種原始的類似宗教的信仰。
+                    </p>
                 </div>
             <div class="about_img">
                 <img src="img/decorate/about_img.png" alt="">
@@ -274,35 +300,35 @@
             <h1>怪談</h1>
             <div class="culture">
                 <div class="culture_img">
-                    <!-- <img src="" alt=""> -->
-                    <img src="https://picsum.photos/200/200/?random=1">
+                    <img src="img/decorate/japan.png" alt="日本文化">
+                    <!-- <img src="https://picsum.photos/200/200/?random=1"> -->
                 </div>
                 <div class="culture_txt">
                     <h2>日本文化</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
-                    <a href="#">more...</a>
+                    <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
             <div class="culture">
                 <div class="culture_txt">
                     <h2>泰國文化</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
-                    <a href="#">more...</a>
+                    <a href="ghost_culture.html">more...</a>
                 </div>
                 <div class="culture_img">
-                    <img src="img/ti.png" alt="泰國">
+                    <img src="img/decorate/thailand.png" alt="泰國文化">
                     <!-- <img src="https://picsum.photos/200/200/?random=1"> -->
                 </div>
             </div>
             <div class="culture">
                 <div class="culture_img">
-                    <!-- <img src="" alt=""> -->
-                    <img src="https://picsum.photos/200/200/?random=1">
+                    <img src="img/decorate/taiwan.png" alt="台灣文化">
+                    <!-- <img src="https://picsum.photos/200/200/?random=1"> -->
                 </div>
                 <div class="culture_txt">
                     <h2>台灣文化</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veniam?</p>
-                    <a href="#">more...</a>
+                    <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
         </section>
@@ -314,6 +340,7 @@
             <div>
                 <h1>鬼怪小百科</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Dolorem, harum.</p>
+                <a href="ghost_encyclopedia.html">more...</a>
             </div>
             <div class="Encyclopedia_bar">
                 <div class="Encyclopedia_img">
@@ -348,11 +375,10 @@
                 </div>
                 <div>
                     <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
-                    <a href="#">more...</a></div>
+                    <a href="movie_info.html">more...</a></div>
                     <div class="discuss_txt"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, laboriosam.</p>
-                    <a href="#">more...</a></div>
+                    <a href="movie_info.html">more...</a></div>
                 </div>
-
             </div>
             
         </section>
@@ -362,31 +388,16 @@
         <img src="img/sky.jpeg" alt="">
     </div>
 
-
-
+    <div id="right_function">
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-instagram">  </a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#">▲</a>
+    </div>
 
     <footer>
-        <div class="connection_info">
-            <div class="connection_info_img">
-                <div >
-                    <img src="https://picsum.photos/80/50/?random=1">
-                </div>
-                <div class="connection_info_icon">
-                    <img src="https://picsum.photos/20/20/?random=1">
-                    <img src="https://picsum.photos/20/20/?random=1">
-                    <img src="https://picsum.photos/20/20/?random=1">
-                    <img src="https://picsum.photos/20/20/?random=1">
-
-                </div>
-            </div>
-            <div class="info">
-                <p>電話：( 03 ) 345-1108</p>
-                <p>電話：( 03 ) 345-1108</p>
-                <p>電話：( 03 ) 345-1108</p>
-            </div>
-        </div>
         <div class="statement">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+            <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
         </div>
     </footer>
     
