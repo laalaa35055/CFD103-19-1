@@ -9,7 +9,7 @@ p{
 font-family: 'Wu';
 src: url('../font/onryou/onryou.TTF') format("truetype");} 
 body{
-    background-image: url(../img/background_image.jpg);
+    background-image: url(../img/decorate/background_image.jpg);
 }
 /* header 設定 */
 

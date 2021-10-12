@@ -82,3 +82,20 @@ function discuss_bar_block(){
         discuss_bar_block.style.display = "none"
     }
 }
+
+document.onmousemove = function iconmouse(e) {
+    var img = document.getElementById("iconmouse");
+    if (!img) {
+        return;
+    }
+
+    var x = e.clientX;
+    var y = e.clientY;
+
+    img.style.transition = "left .5";
+
+    img.style.left = x + 10 + "px";
+    img.style.top = y + 10 + "px"; 
+}
+
+    

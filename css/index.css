@@ -1,0 +1,355 @@
+.saying_block {
+    width: 100%;
+    margin: auto;
+    /* background-color: rgba(22, 22, 22,.6); */
+}
+
+.saying_img {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.saying_img p {
+    color: #ccc;
+    font-size: 20px;
+    position: absolute;
+    right: 200px;
+    bottom: 120px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.saying_img p::after {
+    content: '諺語';
+    opacity: .7;
+    color: #ccc;
+    position: absolute;
+    top: 50px;
+    right: -70px;
+}
+
+.saying_img img {
+    width: 100%;
+    height: 865px;
+    opacity: .5;
+    /* width: 1024px; */
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+article {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+article section {
+    width: 1024px;
+    margin: auto;
+}
+
+.about_ghost {
+    padding: 50px 10px;
+    background-color: rgba(22, 22, 22, .6);
+    border-radius: 10px;
+    display: flex;
+}
+
+.about_img {
+    width: 450px;
+}
+
+.about_img img {
+    width: 100%;
+    vertical-align: top;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, .8);
+    font-family: 'Wu';
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.about_ghost_txt {
+    width: 500px;
+    letter-spacing: 1px;
+    text-indent: 2em;
+    line-height: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_ghost_txt p {
+    color: rgba(255, 255, 255, .8);
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+.strange_block {
+    background-color: rgba(22, 22, 22, .6);
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.culture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 180px;
+}
+
+.culture_img {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.culture_img:nth-child(2) {
+    margin-right: 0;
+    margin-left: 100px;
+}
+
+.culture_img img {
+    width: 100%;
+}
+
+.culture_txt {
+    width: 250px;
+}
+.culture_txt p{
+    line-height: 35px;
+}
+
+.culture h2 {
+    font-size: 30px;
+    color: #E0CE03;
+    opacity: .8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.culture p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 15px;
+}
+
+.culture_txt a {
+    font-size: 20px;
+    color: #33ccff;
+    text-decoration: none;
+    float: right;
+}
+
+.culture_txt p {
+    text-indent: 2em;
+    width: 250px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.culture_txt a:hover {
+    text-decoration: underline;
+}
+
+.Encyclopedia_block {
+    background-color: rgba(22, 22, 22, .6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Encyclopedia_block div p {
+    color: rgba(255, 255, 255, .8);
+    font-size: 20px;
+    padding: 0 20px;
+    line-height: 35px;
+}
+
+.Encyclopedia_block div a {
+    margin-top: 20px;
+    float: right;
+    text-decoration: none;
+    color: #33ccff;
+    font-size: 20px;
+}
+
+.Encyclopedia_block div a:hover {
+    text-decoration: underline;
+}
+
+.Encyclopedia_bar {
+    margin: 100px 0;
+    position: relative;
+}
+
+.Encyclopedia_img h3 {
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Encyclopedia_img {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.Encyclopedia_img img {
+    width: 100%;
+    height: 200px;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.Encyclopedia_bar {
+    display: flex;
+}
+
+.discuss_block {
+    background-color: rgba(22, 22, 22, .6);
+    border-radius: 10px;
+    padding: 50px 0 50px;
+}
+
+.discuss_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0 50px;
+}
+.discuss_txt {
+    width: 350px;
+    margin: 20px;    
+}
+.discuss_txt a{
+    display: block;
+    color: rgba(255, 255, 255, .8);
+    font-size: 20px;
+    clear: both;
+    margin-bottom: 30px;
+}
+.discuss_txt a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.discuss_txt a:nth-of-type(3) {
+    font-size: 20px;
+    color: #33ccff;
+    text-decoration: none;
+    float: right;
+    margin: 20px;
+}
+.discuss_txt  a:nth-of-type(3):hover {
+    text-decoration: underline;
+}
+.discuss_img {
+    width: 400px;
+}
+
+.discuss_info {
+    position: relative;
+    opacity: .1;
+}
+
+.discuss_img .discuss_info img {
+    width: 222px;
+    float: left;
+    clear: both;
+}
+
+.discuss_img .discuss_info img:hover {
+    cursor: pointer;
+}
+
+.discuss_img .hot_discuss img:hover {
+    cursor: pointer;
+}
+
+.discuss_img .discuss_info::after {
+    position: absolute;
+    display: inline-block;
+    content: '討論區';
+    color: #ccc;
+    top: -50px;
+    left: 90px;
+}
+
+.discuss_img .hot_discuss {
+    clear: both;
+    position: relative;
+}
+
+.discuss_img .hot_discuss::after {
+    position: absolute;
+    display: inline-block;
+    content: '電影資訊';
+    color: #ccc;
+    top: 220px;
+    left: 260px;
+}
+
+.discuss_img .hot_discuss img {
+    width: 222px;
+    float: right;
+    clear: both;
+}
+
+.end_img {
+    width: 1024px;
+    margin: 50px auto;
+    opacity: 0.2;
+}
+
+.end_img img {
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.left{
+    position: absolute;
+    font-size: 30px;
+    color: #ccc;
+    top: 130px;
+    left: -20px;
+}
+.right{
+    position: absolute;
+    font-size: 30px;
+    color: #ccc;
+    top: 130px;
+    right:-20px;
+}
+.left:hover {
+    color: #33ccff;
+    cursor: pointer;
+}
+
+.right:hover {
+    color: #33ccff;
+    cursor: pointer;
+}
+
+#iconmouse{
+    width: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#iconmouse img{
+    width: 100%;
+}
