@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,30 @@
     <script src="js/config.js"></script>
     <title>FAQ</title>
     <style type="text/css">
-        .FAQ_block{
+        .FAQ_block {
             margin: 100px auto;
             width: 1024px;
-            background-color: rgba(22, 22, 22,.6);
+            background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
             padding: 50px 0;
         }
-        .FAQ_block h1{
+
+        .FAQ_block h1 {
             color: white;
             text-align: center;
             font-size: 30px;
             display: block;
         }
-        .FAQ_block h1::after{
+
+        .FAQ_block h1::after {
             display: block;
             content: '';
             height: 1px;
             background-color: white;
             margin: 20px 80px 50px;
         }
-        .FAQ_block .Q{
+
+        .FAQ_block .Q {
             width: 70%;
             margin: auto;
             background-color: rgb(33, 33, 33);
@@ -39,45 +43,45 @@
             justify-content: space-between;
             align-items: center;
         }
-        .FAQ_block .Q span{
-            font-size:20px;
+
+        .FAQ_block .Q span {
+            font-size: 20px;
             color: white;
             text-align: center;
             letter-spacing: 1px;
         }
-        .FAQ_block .Q span:nth-child(2){
+
+        .FAQ_block .Q span:nth-child(2) {
             margin-right: 15px;
         }
-        .FAQ_block .A{
+
+        .FAQ_block .A {
             width: 70%;
             margin: auto;
             padding: 30px 0 20px;
             background-color: transparent;
         }
-        .FAQ_block .A p{
+
+        .FAQ_block .A p {
             color: white;
             font-size: 18px;
             text-indent: 2em;
             letter-spacing: 3px;
+            line-height: 25px;
         }
-        .A{
+
+        .A {
             display: none;
             padding: 10px;
             margin-top: 10px;
         }
-        .QA{
+
+        .QA {
             margin-bottom: 50px;
         }
-
-        
-
-
-
-
-
-
     </style>
 </head>
+
 <body>
     <header>
         <div class="subscription">
@@ -87,90 +91,95 @@
         <div class="banner_block">
             <div class="banner">
                 <div class="logo">
-                <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
-            </div>
-            <nav class="nav_bar">
-                <a href="ghost_culture.html">文化怪談</a>
-                <a href="ghost_encyclopedia.html">妖怪百科</a>
-                <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
-                <a href="ghost_game.html">妖怪圖</a>
-                <a href="about.html">關於我們</a> 
-                <div id="discuss_bar_block">
-                    <a href="discuss.html">討論區</a>
-                    <a href="movie_info.html">電影資訊</a>
+                    <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
                 </div>
-            </nav>
+                <nav class="nav_bar">
+                    <a href="ghost_culture.html">文化怪談</a>
+                    <a href="ghost_encyclopedia.html">妖怪百科</a>
+                    <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
+                    <a href="ghost_game.html">妖怪圖</a>
+                    <a href="about.html">關於我們</a>
+                    <div id="discuss_bar_block">
+                        <a href="discuss.html">討論區</a>
+                        <a href="movie_info.html">電影資訊</a>
+                    </div>
+                </nav>
             </div>
-        </div>             
+        </div>
     </header>
 
     <article>
         <section class="FAQ_block">
-            <h1>FAQ</h1>
-            <div class="QA">
-                <div onclick="S_H(this.id)" class="Q" id="Q1">
-                    <span>Q1 墨x怪 能夠做什麼？</span>
-                    <span id="change1">▼</span>
-                </div>
-                <div class="A" id="A1">
-                    <p>幫助道友們瞭解各國文化及各式鬼怪奇譚</p>
-                </div>
-            </div>
-            <div class="QA">
-                <div onclick="S_H(this.id)" class="Q" id="Q2">
-                    <span>Q2 訂閱我們有什麼功能？</span>
-                    <span id="change2">▼</span>
-                </div>
-                <div class="A" id="A2">
-                    <p>訂閱我們後，在消息更新時我們會通過 E-mail 送達最新消息</p>
-                </div>
-            </div>
-            <div class="QA">
-                <div onclick="S_H(this.id)" class="Q" id="Q3">
-                    <span>Q3 妖怪拼圖什麼時候開啟？</span>
-                    <span id="change3">▼</span>
-                </div>
-                <div class="A" id="A3">
-                    <p>目前正在努力完成中，敬請期待</p>
-                </div>
-            </div>
-            <div class="QA">
-                <div onclick="S_H(this.id)" class="Q" id="Q4">
-                    <span>Q4 以後會新增其他功能嗎？</span>
-                    <span id="change4">▼</span>
-                </div>
-                <div class="A" id="A4">
-                    <p>關於各國文化版，數量有些稀少，以後會再新增更多國家</p>
-                </div>
-            </div>
-            <div class="QA">
-                <div onclick="S_H(this.id)" class="Q" id="Q5">
-                    <span>Q5 驚嚇到底有甚麼好處？</span>
-                    <span id="change5">▼</span>
-                </div>
-                <div class="A" id="A5">
-                    <p>1.驚嚇能燃燒卡路里</p>
-                    <p>2.刺激腎上腺素來加強免疫力</p>
-                    <p>3.幫助應對焦慮情緒</p>
-                    <p>4.喜歡被嚇有科學根據</p>
-                    <p>5.活化大腦更清醒</p>
-                    <p>6.看鬼片使約會更順利</p>
-                    <p>7.被嚇能紓壓並戰勝恐懼</p>
-                    <p>8.小孩應避免受驚嚇留陰影</p>
-                    <p>9.不敢看別強迫自己</p>
-                </div>
-            </div>
-           
-            
-           
+            <ul>
+                <h1>FAQ</h1>
+                <li class="QA">
+                    <div onclick="S_H(this.id)" class="Q" id="Q1">
+                        <span>Q1 墨x怪 能夠做什麼？</span>
+                        <span id="change1">▼</span>
+                    </div>
+                    <div class="A" id="A1">
+                        <p>幫助道友們瞭解各國文化及各式鬼怪奇譚</p>
+                    </div>
+                </li>
+                <li class="QA">
+                    <div onclick="S_H(this.id)" class="Q" id="Q2">
+                        <span>Q2 訂閱我們有什麼功能？</span>
+                        <span id="change2">▼</span>
+                    </div>
+                    <div class="A" id="A2">
+                        <p>訂閱我們後，在消息更新時我們會通過 E-mail 送達最新消息</p>
+                    </div>
+                </li>
+                <li class="QA">
+                    <div onclick="S_H(this.id)" class="Q" id="Q3">
+                        <span>Q3 妖怪拼圖什麼時候開啟？</span>
+                        <span id="change3">▼</span>
+                    </div>
+                    <div class="A" id="A3">
+                        <p>目前正在努力完成中，敬請期待</p>
+                    </div>
+                </li>
+                <li class="QA">
+                    <div onclick="S_H(this.id)" class="Q" id="Q4">
+                        <span>Q4 以後會新增其他功能嗎？</span>
+                        <span id="change4">▼</span>
+                    </div>
+                    <div class="A" id="A4">
+                        <p>關於各國文化版，數量有些稀少，以後會再新增更多國家</p>
+                    </div>
+                </li>
+                <li class="QA">
+                    <div onclick="S_H(this.id)" class="Q" id="Q5">
+                        <span>Q5 驚嚇到底有甚麼好處？</span>
+                        <span id="change5">▼</span>
+                    </div>
+                    <div class="A" id="A5">
+                        <p>1.驚嚇能燃燒卡路里</p>
+                        <p>2.刺激腎上腺素來加強免疫力</p>
+                        <p>3.幫助應對焦慮情緒</p>
+                        <p>4.喜歡被嚇有科學根據</p>
+                        <p>5.活化大腦更清醒</p>
+                        <p>6.看鬼片使約會更順利</p>
+                        <p>7.被嚇能紓壓並戰勝恐懼</p>
+                        <p>8.小孩應避免受驚嚇留陰影</p>
+                        <p>9.不敢看別強迫自己</p>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
         </section>
     </article>
-   
+
     <div id="right_function">
-        <a href="#" class="fab fa-facebook-square"></a>
-        <a href="#" class="fab fa-instagram">  </a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#">▲</a>
+        <ul>
+            <li><a href="#" class="fab fa-facebook-square"></a></li>
+            <li><a href="#" class="fab fa-instagram"> </a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#">▲</a></li>
+        </ul>
     </div>
 
     <footer>
@@ -178,6 +187,7 @@
             <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
     <script src="js/config.js"></script>
     <title>墨 x 怪</title>
-    <style type="text/css">   
-        .saying_block{
+    <style type="text/css">
+        .saying_block {
             width: 100%;
             margin: auto;
             /* background-color: rgba(22, 22, 22,.6); */
         }
-        .saying_img{
+
+        .saying_img {
             margin: auto;
             width: 1200px;
             display: flex;
@@ -22,60 +24,70 @@
 
             position: relative;
         }
-        .saying_img p{
-           color: #ccc;
-           font-size: 20px;
-           position: absolute;
-           right: 200px;
-           bottom: 120px;
-           opacity: 0.8;
-           font-weight: bold;
+
+        .saying_img p {
+            color: #ccc;
+            font-size: 20px;
+            position: absolute;
+            right: 200px;
+            bottom: 120px;
+            opacity: 0.8;
+            font-weight: bold;
         }
-        .saying_img p::after{
-          content: '諺語';
-          opacity: .7;
-          color: #ccc;
-          position: absolute;
-          top: 50px;
-          right: -70px;
+
+        .saying_img p::after {
+            content: '諺語';
+            opacity: .7;
+            color: #ccc;
+            position: absolute;
+            top: 50px;
+            right: -70px;
         }
-        .saying_img img{
+
+        .saying_img img {
             width: 100%;
-            height: 865px;            
+            height: 865px;
             opacity: .5;
-            /* width: 1024px; */    
+            /* width: 1024px; */
             vertical-align: top;
             border-radius: 10px;
         }
-        article{
+
+        article {
             width: 100%;
-            margin-bottom: 100px; 
+            margin-bottom: 100px;
         }
-        article section{
+
+        article section {
             width: 1024px;
-           margin: auto;
+            margin: auto;
         }
-        .about_ghost{
+
+        .about_ghost {
             padding: 50px 10px;
             background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
             display: flex;
         }
-        .about_img{
+
+        .about_img {
             width: 450px;
         }
-        .about_img img{
+
+        .about_img img {
             width: 100%;
             vertical-align: top;
         }
-        h1{
+
+        h1 {
             text-align: center;
             color: rgba(255, 0, 0, .8);
             font-family: 'Wu';
             font-size: 50px;
             margin-bottom: 50px;
         }
-        .about_ghost_txt{
+
+        .about_ghost_txt {
             width: 500px;
             letter-spacing: 1px;
             text-indent: 2em;
@@ -86,55 +98,66 @@
             justify-content: center;
             align-items: center;
         }
+
         .about_ghost_txt p {
             color: rgba(255, 255, 255, .8);
             padding: 0 50px;
             font-size: 20px;
         }
-        .strange_block{
+
+        .strange_block {
             background-color: rgba(22, 22, 22, .6);
             padding: 50px 0;
             border-radius: 10px;
         }
-        .culture{
+
+        .culture {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 150px 180px;
         }
-        .culture_img{
+
+        .culture_img {
             width: 300px;
-            margin-right:100px ;
+            margin-right: 100px;
         }
-        .culture_img:nth-child(2){
-            margin-right:0 ;
-            margin-left:100px ;
+
+        .culture_img:nth-child(2) {
+            margin-right: 0;
+            margin-left: 100px;
         }
+
         .culture_img img {
             width: 100%;
         }
-        .culture_txt{
+
+        .culture_txt {
             width: 250px;
         }
-        .culture h2{
+
+        .culture h2 {
             font-size: 30px;
             color: #E0CE03;
             opacity: .8;
             text-align: center;
             margin-bottom: 30px;
         }
-        .culture p{
+
+        .culture p {
             font-size: 20px;
             color: rgba(255, 255, 255, .8);
             margin-bottom: 15px;
         }
-        .culture_txt a{
+
+        .culture_txt a {
             font-size: 20px;
             color: #33ccff;
             text-decoration: none;
             float: right;
         }
-        .culture_txt p{
+
+        .culture_txt p {
             text-indent: 2em;
             width: 250px;
             white-space: normal;
@@ -144,10 +167,12 @@
             -webkit-box-orient: vertical;
             display: -webkit-box;
         }
-        .culture_txt a:hover{
+
+        .culture_txt a:hover {
             text-decoration: underline;
         }
-        .Encyclopedia_block{
+
+        .Encyclopedia_block {
             background-color: rgba(22, 22, 22, .6);
             display: flex;
             justify-content: space-around;
@@ -155,135 +180,183 @@
             border-radius: 10px;
         }
 
-        .Encyclopedia_block div p{
+        .Encyclopedia_block div p {
             color: rgba(255, 255, 255, .8);
             font-size: 20px;
             /* margin: 0 20px; */
             padding: 0 20px;
         }
-        .Encyclopedia_block div a{
+
+        .Encyclopedia_block div a {
             margin-top: 20px;
             float: right;
             text-decoration: none;
             color: #33ccff;
             font-size: 20px;
         }
-        .Encyclopedia_block div a:hover{
+
+        .Encyclopedia_block div a:hover {
             text-decoration: underline;
         }
-        .Encyclopedia_bar{
+
+        .Encyclopedia_bar {
             margin: 100px 0;
+            position: relative;
         }
-        .Encyclopedia_img h3{
+
+        .Encyclopedia_img h3 {
             color: rgba(255, 255, 255, .8);
             text-align: center;
             margin-bottom: 15px;
         }
-        .Encyclopedia_img{
+
+        .Encyclopedia_img {
             width: 150px;
             display: flex;
             flex-direction: column;
             margin: 0 20px;
         }
+
         .Encyclopedia_img img {
-            width: 100%;height: 200px;
+            width: 100%;
+            height: 200px;
             vertical-align: top;
             border-radius: 5px;
         }
-        .Encyclopedia_bar{
+
+        .Encyclopedia_bar {
             display: flex;
         }
-        .discuss_block{
+
+        .discuss_block {
             background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
             padding: 50px 0 50px;
         }
-        .discuss_content{
+
+        .discuss_content {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 100px 0 50px;
         }
-        .discuss_txt{
+        .discuss_txt {
             width: 350px;
-            margin: 20px;
+            margin: 20px;    
         }
-        .discuss_txt p{
+        .discuss_txt a{
+            display: block;
             color: rgba(255, 255, 255, .8);
             font-size: 20px;
             clear: both;
             margin-bottom: 30px;
         }
-        .discuss_txt p:hover{
+        .discuss_txt a:hover{
+            cursor: pointer;
             text-decoration: underline;
         }
-        .discuss_txt a{
+        .discuss_txt a:nth-of-type(3) {
+            font-size: 20px;
             color: #33ccff;
             text-decoration: none;
             float: right;
             margin: 20px;
         }
-        .discuss_txt a:hover{
+        .discuss_txt  a:nth-of-type(3):hover {
             text-decoration: underline;
         }
-        .discuss_img{
+        .discuss_img {
             width: 400px;
         }
-        .discuss_info{
+
+        .discuss_info {
             position: relative;
             opacity: .1;
         }
-        .discuss_img .discuss_info img{
+
+        .discuss_img .discuss_info img {
             width: 222px;
             float: left;
             clear: both;
         }
-        .discuss_img .discuss_info img:hover{
+
+        .discuss_img .discuss_info img:hover {
             cursor: pointer;
         }
-        .discuss_img .hot_discuss img:hover{
+
+        .discuss_img .hot_discuss img:hover {
             cursor: pointer;
         }
-        .discuss_img .discuss_info::after{
+
+        .discuss_img .discuss_info::after {
             position: absolute;
             display: inline-block;
             content: '討論區';
             color: #ccc;
             top: -50px;
-            left:90px;
-        }       
-        .discuss_img .hot_discuss{
+            left: 90px;
+        }
+
+        .discuss_img .hot_discuss {
             clear: both;
             position: relative;
         }
-        .discuss_img .hot_discuss::after{
+
+        .discuss_img .hot_discuss::after {
             position: absolute;
             display: inline-block;
             content: '電影資訊';
             color: #ccc;
             top: 220px;
-            left:260px;
+            left: 260px;
         }
-        .discuss_img .hot_discuss img{
+
+        .discuss_img .hot_discuss img {
             width: 222px;
             float: right;
             clear: both;
         }
-        .end_img{
+
+        .end_img {
             width: 1024px;
             margin: 50px auto;
             opacity: 0.2;
         }
-        .end_img img{
+
+        .end_img img {
             width: 100%;
             border-radius: 50%;
             vertical-align: top;
         }
 
+        .left{
+            position: absolute;
+            font-size: 30px;
+            color: #ccc;
+            top: 130px;
+            left: -20px;
+        }
+        .right{
+            position: absolute;
+            font-size: 30px;
+            color: #ccc;
+            top: 130px;
+            right:-20px;
+        }
+        .left:hover {
+            color: #33ccff;
+            cursor: pointer;
+        }
+
+        .right:hover {
+            color: #33ccff;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    
+
     <header>
         <div class="subscription">
             <a href="follow.html">訂閱我們</a>
@@ -292,27 +365,27 @@
         <div class="banner_block">
             <div class="banner">
                 <div class="logo">
-                <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
-            </div>
-            <nav class="nav_bar">
-                <a href="ghost_culture.html">文化怪談</a>
-                <a href="ghost_encyclopedia.html">妖怪百科</a>
-                <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
-                <a href="ghost_game.html">妖怪圖</a>
-                <a href="about.html">關於我們</a> 
-                <div id="discuss_bar_block">
-                    <a href="discuss.html">討論區</a>
-                    <a href="movie_info.html">電影資訊</a>
+                    <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
                 </div>
-            </nav>
+                <nav class="nav_bar">
+                    <a href="ghost_culture.html">文化怪談</a>
+                    <a href="ghost_encyclopedia.html">妖怪百科</a>
+                    <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
+                    <a href="ghost_game.html">妖怪圖</a>
+                    <a href="about.html">關於我們</a>
+                    <div id="discuss_bar_block">
+                        <a href="discuss.html">討論區</a>
+                        <a href="movie_info.html">電影資訊</a>
+                    </div>
+                </nav>
             </div>
-        </div>             
+        </div>
     </header>
-    <article >
+    <article>
         <section class="saying_block">
             <div class="saying_img">
                 <img src="img/saying_img.jpg" alt="">
-                <p>寧可信其有，不可信其無</p>
+                <p>寧可信其有，不可信其無。</p>
             </div>
         </section>
     </article>
@@ -326,11 +399,11 @@
                         古時，科學落後、思維封閉，有許多「超自然」的現象無法解釋，人們將這些歸因於神靈鬼怪的存在，漸漸地形成一種原始的類似宗教的信仰。
                     </p>
                 </div>
-            <div class="about_img">
-                <img src="img/decorate/about_img.png" alt="">
-                
+                <div class="about_img">
+                    <img src="img/decorate/about_img.png" alt="">
+
+                </div>
             </div>
-        </div>
         </section>
     </article>
     <article>
@@ -343,14 +416,16 @@
                 </div>
                 <div class="culture_txt">
                     <h2>日本文化</h2>
-                    <p>對日本人而言，神代表絕對的正面，而鬼則是與地獄、暗黑勢力結合，會危害人類甚至吃人的怪物。妖怪，就介於「神」跟「鬼」之間。凡是人類死後無形體的「冤魂」、修行成精的「動物」，甚至久置荒廢的廢棄物，只要是人類無法解釋，又看不見也摸不到的魔、靈、精、怪，全部統稱為「妖怪」。</p>
+                    <p>對日本人而言，神代表絕對的正面，而鬼則是與地獄、暗黑勢力結合，會危害人類甚至吃人的怪物。妖怪，就介於「神」跟「鬼」之間。凡是人類死後無形體的「冤魂」、修行成精的「動物」，甚至久置荒廢的廢棄物，只要是人類無法解釋，又看不見也摸不到的魔、靈、精、怪，全部統稱為「妖怪」。
+                    </p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
             <div class="culture">
                 <div class="culture_txt">
                     <h2>泰國文化</h2>
-                    <p>在泰國民間信仰中，祖先、家庭佔有相當重要的地位。泰國人吵架不管吵多兇都不會辱罵對方的父母，而祖先的信仰也常與運勢有關，好比他們認為祖先也有可能轉世投胎成為貓狗，所以在門口放碗食物、放杯乾淨的水給流浪動物，會為家人帶來好運。在已除魅的現代社會，雖然有些信仰被視為迷信，但也正因為有這些信仰，泰國人的善良才能如此迷人。至少，不像台灣有些人會虐待動物，不是嗎？</p>
+                    <p>在泰國民間信仰中，祖先、家庭佔有相當重要的地位。泰國人吵架不管吵多兇都不會辱罵對方的父母，而祖先的信仰也常與運勢有關，好比他們認為祖先也有可能轉世投胎成為貓狗，所以在門口放碗食物、放杯乾淨的水給流浪動物，會為家人帶來好運。在已除魅的現代社會，雖然有些信仰被視為迷信，但也正因為有這些信仰，泰國人的善良才能如此迷人。至少，不像台灣有些人會虐待動物，不是嗎？
+                    </p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
                 <div class="culture_img">
@@ -365,7 +440,8 @@
                 </div>
                 <div class="culture_txt">
                     <h2>台灣文化</h2>
-                    <p>臺灣島嶼山海之間，曾繁衍許多妖魅鬼神、眾多魔幻怪物，也有奇譚異事流傳諸野。而在四百多年以前，漢人、西方人、日本人相繼來臺定居、遊歷，也將森羅萬妖的傳說謄抄於冊，而原住民族則以口傳神話故事。</p>
+                    <p>臺灣島嶼山海之間，曾繁衍許多妖魅鬼神、眾多魔幻怪物，也有奇譚異事流傳諸野。而在四百多年以前，漢人、西方人、日本人相繼來臺定居、遊歷，也將森羅萬妖的傳說謄抄於冊，而原住民族則以口傳神話故事。
+                    </p>
                     <a href="ghost_culture.html">more...</a>
                 </div>
             </div>
@@ -378,20 +454,24 @@
                 <p>日式、泰式、台式、各國鬼怪<br>哪一種的類型令你害怕呢？...</p>
                 <a href="ghost_encyclopedia.html">more...</a>
             </div>
-            <div class="Encyclopedia_bar">
-                <div class="Encyclopedia_img">
+
+            <ul class="Encyclopedia_bar">
+                <li class="Encyclopedia_img">
                     <h3>貓女</h3>
                     <img src="img/ghost/1.jpg" alt="">
-                </div>
-                <div class="Encyclopedia_img">
+                </li>
+                <li class="Encyclopedia_img">
                     <h3>般若</h3>
                     <img src="img/ghost/3.jpg" alt="">
-                </div>
-                <div class="Encyclopedia_img">
+                </li>
+                <li class="Encyclopedia_img">
                     <h3>煙煙羅</h3>
                     <img src="img/ghost/4.jpg" alt="">
-                </div>
-            </div>
+                </li>
+                <div class="left far fa-caret-square-left"></div>
+                <div class="right far fa-caret-square-right"></div>
+            </ul>
+
         </section>
     </article>
     <article>
@@ -408,34 +488,36 @@
                 </div>
                 <div>
                     <div class="discuss_txt">
-                        <p>溫子仁的驚悚新作《疾厄》背後，其實有段暖心的動人故事...</p>
-                        <p>《疾厄》：這是一封獻給恐怖片的情書，也是一則掙脫禁錮的女性黑暗超英雄故事...</p>
+                        <a>溫子仁的驚悚新作《疾厄》背後，其實有段暖心的動人故事...</a>
+                        <a>《疾厄》：這是一封獻給恐怖片的情書，也是一則掙脫禁錮的女性黑暗超英雄故事...</a>
                         <a href="movie_info.html">more...</a>
                     </div>
                 </div>
             </div>
-            
+
         </section>
     </article>
     <div class="end_img">
         <img src="img/sky.jpeg" alt="">
     </div>
-    
+
 
     <div id="right_function">
-        <a href="#" class="fab fa-facebook-square"></a>
-        <a href="#" class="fab fa-instagram">  </a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#">▲</a>
+        <ul>
+            <li><a href="#" class="fab fa-facebook-square"></a></li>
+            <li><a href="#" class="fab fa-instagram"> </a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#">▲</a></li>
+        </ul>
     </div>
-
     <footer>
         <div class="statement">
             <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
         </div>
     </footer>
-    
-    
-    
+
+
+
 </body>
+
 </html>

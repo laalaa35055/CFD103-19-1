@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,47 +10,54 @@
     <link rel="stylesheet" href="css/init.css">
     <title>電影資訊</title>
     <style type="text/css">
-        article{
+        article {
             width: 100%;
         }
-        .movie_info_block{
+
+        .movie_info_block {
             padding: 50px 0;
             width: 1024px;
             margin: 100px auto 50px;
             background-color: rgba(22, 22, 22, .6);
             border-radius: 10px;
         }
-        .movie_info_block h1{
+
+        .movie_info_block h1 {
             color: white;
             font-size: 30px;
             text-align: center;
             margin-bottom: 50px;
         }
-        .movie_info_block h1::after{
+
+        .movie_info_block h1::after {
             content: '';
             display: block;
             height: 1px;
             background-color: white;
             margin: 30px 50px;
         }
-        .movie_info{
+
+        .movie_info {
             width: 80%;
             height: 300px;
             margin: 100px auto 50px;
             display: flex;
             align-items: center;
         }
-        .movie_img{
+
+        .movie_img {
             width: 250px;
             margin-right: 20px;
             background-color: rgba(44, 44, 44, .6);
         }
-        .movie_img img{
+
+        .movie_img img {
             width: 100%;
             border-radius: 10px;
             vertical-align: top;
         }
-        .movie_txt{
+
+        .movie_txt {
             width: 560px;
             display: flex;
             flex-direction: column;
@@ -58,20 +66,26 @@
             padding: 15px 10px;
             border-radius: 10px;
         }
-        .movie_txt h2{
-            color: white;
+
+        .movie_txt h2 {
+            color: red;
+            opacity: .9;
+            font-size: 25px;
             padding: 5px;
         }
-        .movie_txt p{
-            color: white;
+
+        .movie_txt p {
+            color: #ccc;
             padding: 5px;
         }
-        .movie_txt a{
+
+        .movie_txt a {
             color: #33ccff;
             text-decoration: none;
             padding: 5px;
         }
-        .movie_txt button{
+
+        .movie_txt button {
             border: none;
             list-style: none;
             color: #33ccff;
@@ -80,23 +94,28 @@
             font-size: 15px;
             margin-right: 15px;
         }
-        .movie_txt a:hover{
+
+        .movie_txt a:hover {
             border: 1px solid white;
             border-radius: 10px;
         }
-        .movie_txt button:hover{
+
+        .movie_txt button:hover {
             cursor: pointer;
             border: 1px solid white;
             border-radius: 10px;
         }
-        .function{
-            margin: 10px 0 5px ;
+
+        .function {
+            margin: 5px 0 5px;
             padding: 5px;
         }
-        .movie_txt h2 span{
+
+        .movie_txt h2 span {
             font-size: 18px;
         }
-        .introduction{
+
+        .introduction {
             width: 80%;
             padding: 10px;
             border-radius: 10px;
@@ -106,7 +125,8 @@
             position: relative;
             display: none;
         }
-        .introduction h2::after{
+
+        .introduction h2::after {
             content: '';
             width: 0;
             height: 0;
@@ -115,35 +135,40 @@
             border-right: 10px solid transparent;
             border-bottom: 10px solid rgba(44, 44, 44, .6);
             position: absolute;
-            top:-10px;
+            top: -10px;
             left: 352px;
         }
-        .introduction h2{
-            margin-bottom: 10px;
+
+        .introduction h2 {
+            color: white;
+            margin-bottom: 15px;
         }
-        .introduction p{
+
+        .introduction p {
+            color: #ccc;
             margin: 5px;
             letter-spacing: 1px;
             font-size: 20px;
         }
-        .hide_info{
+
+        .hide_info {
             margin-top: 100px;
             color: #33ccff;
             padding: 10px;
             text-align: center;
         }
-        .hide_info:hover{
+
+        .hide_info:hover {
             cursor: pointer;
             text-decoration: underline;
         }
-        .hide{
+
+        .hide {
             display: none;
         }
-
-
-
     </style>
 </head>
+
 <body>
 
 
@@ -156,488 +181,506 @@
         <div class="banner_block">
             <div class="banner">
                 <div class="logo">
-                <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
-            </div>
-            <nav class="nav_bar">
-                <a href="ghost_culture.html">文化怪談</a>
-                <a href="ghost_encyclopedia.html">妖怪百科</a>
-                <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
-                <a href="ghost_game.html">妖怪圖</a>
-                <a href="about.html">關於我們</a> 
-                <div id="discuss_bar_block">
-                    <a href="discuss.html">討論區</a>
-                    <a href="movie_info.html">電影資訊</a>
+                    <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
                 </div>
-            </nav>
+                <nav class="nav_bar">
+                    <a href="ghost_culture.html">文化怪談</a>
+                    <a href="ghost_encyclopedia.html">妖怪百科</a>
+                    <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
+                    <a href="ghost_game.html">妖怪圖</a>
+                    <a href="about.html">關於我們</a>
+                    <div id="discuss_bar_block">
+                        <a href="discuss.html">討論區</a>
+                        <a href="movie_info.html">電影資訊</a>
+                    </div>
+                </nav>
             </div>
-        </div>             
+        </div>
     </header>
 
 
-    
+
     <article>
         <section class="movie_info_block">
             <h1>電影資訊</h1>
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-01.jpg" alt="疾厄">
-                </div>
-                <div class="movie_txt">
-                    <h2>疾厄 <span>Malignant</span></h2>
-                    <p>上映日期：<span>2021-09-02</span></p>
-                    <p>片　　長：<span>01時51分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>6.3</span></p>
-                    <p>導演：<span>溫子仁(James Wan)</span></p>
-                    <p>演員：<span>安娜貝爾瓦莉絲(Annabelle Wallis) 、 麥蒂哈森(Maddie Hasson) 、 吳宇衛(George Young) 、 米克爾布莉安娜懷特(Michole Briana White) 、 賈桂琳麥肯齊(Jacqueline McKenzie) 、 傑克阿貝爾(Jake Abel)</span></p>
-                    <div class="function">
-                        <button  onclick="movie_info(this.id)" id="info_1">查看簡介 <span id="movie_change1">▼</span></button>
-                        <a href="https://www.youtube.com/watch?v=yrK6dGaX0GU" target="_blank">預告</a>
+            <ul>
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-01.jpg" alt="疾厄">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>疾厄 <span>Malignant</span></h2>
+                        <p>上映日期：<span>2021-09-02</span></p>
+                        <p>片　　長：<span>01時51分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>6.3</span></p>
+                        <p>導演：<span>溫子仁(James Wan)</span></p>
+                        <p>演員：<span>安娜貝爾瓦莉絲(Annabelle Wallis) 、 麥蒂哈森(Maddie Hasson) 、 吳宇衛(George Young) 、
+                                米克爾布莉安娜懷特(Michole Briana White) 、 賈桂琳麥肯齊(Jacqueline McKenzie) 、 傑克阿貝爾(Jake Abel)</span>
+                        </p>
+                        <div class="function">
+                            <button onclick="movie_info(this.id)" id="info_1">查看簡介 <span
+                                    id="movie_change1">▼</span></button>
+                            <a href="https://www.youtube.com/watch?v=yrK6dGaX0GU" target="_blank">預告</a>
+                        </div>
+                    </div>
+                </li>
+                <div class="introduction" id="info_txt1">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>片中麥迪森的生活發生了可怕的轉折，開始不斷看到恐怖謀殺案實況的異象，逐漸瀕臨崩潰；當她發現這些宛如噩夢般的幻象，實際上是真實發生過的殘忍血案時，更加陷入痛苦的深淵，而這一切似乎也與一位名叫蓋博瑞的魔鬼有關。
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt1">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>片中麥迪森的生活發生了可怕的轉折，開始不斷看到恐怖謀殺案實況的異象，逐漸瀕臨崩潰；當她發現這些宛如噩夢般的幻象，實際上是真實發生過的殘忍血案時，更加陷入痛苦的深淵，而這一切似乎也與一位名叫蓋博瑞的魔鬼有關。</p>
-                </div>
-            </div>
 
 
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-02.jpg" alt="怪奇大廈">
-                </div>
-                <div class="movie_txt">
-                    <h2>怪奇大廈 <span>The Night Shift</span></h2>
-                    <p>上映日期：<span>2021-07-30</span></p>
-                    <p>片　　長：<span>01時47分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span></span></p>
-                    <p>導演：<span>趙巴倫</span></p>
-                    <p>演員：<span>盛駿 、 金洪波 、 金寶羅 、 朴素珍</span></p>
-                    <div class="function">
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-02.jpg" alt="怪奇大廈">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>怪奇大廈 <span>The Night Shift</span></h2>
+                        <p>上映日期：<span>2021-07-30</span></p>
+                        <p>片　　長：<span>01時47分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span></span></p>
+                        <p>導演：<span>趙巴倫</span></p>
+                        <p>演員：<span>盛駿 、 金洪波 、 金寶羅 、 朴素珍</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_2">查看簡介 <span id="movie_change2">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_2">查看簡介 <span
+                                    id="movie_change2">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=Eb4XTL6m7Vs" target="_blank">預告</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="introduction" id="info_txt2">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★ 繼話題賣座恐怖片《鬼病院》，又一韓國凶宅靈異大作等你來試膽！</p>
-                    <p>★ 首支預告在韓公開3日即突破70萬觀看次數，留言數逼近2萬，網友引頸期待！</p>
-                    <p>★ 「浪漫男神」盛駿首部主演電影，為求創作靈感竟闖詭異禁地！</p>
-                    <p>★ 神祕的大廈所發生的5個恐怖故事令人嚇破膽…</p>
-                    <p>恐怖網路漫畫作家智宇（盛駿 飾）為了尋找靈感，而造訪了被稱為「怪奇大廈」的老舊大廈。表情令人難以猜透的大廈管理人（金洪波 飾），告訴智宇大廈所發生的不可思議事件，像是504號、708號等……智宇愈聽愈入迷，開始執著於怪奇大廈所發生的一切……</p>
-                </div>
-            </div>
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-03.jpg" alt="薩滿">
-                </div>
-                <div class="movie_txt">
-                    <h2>薩滿 <span>The Medium</span> </h2>
-                    <p>上映日期：<span>2021-08-25</span></p>
-                    <p>片　　長：<span>02時11分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span>6.7</span></p>
-                    <p>導演：<span>班莊比辛達拿剛(Banjong Pisanthanakun)</span></p>
-                    <p>演員：<span>納利亞桾蒙空傣(Narilya Gulmongkolpech) 、 薩娃妮烏托瑪(Sawanee Utoomma)</span></p>
-                    <div class="function">
-                        <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_3">查看簡介 <span id="movie_change3">▼</span></button>
-                            <a href="https://www.youtube.com/watch?v=wpRu1q9HE3g" target="_blank">預告</a>
-                        </div>
+                </li>
+                <div class="introduction" id="info_txt2">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★ 繼話題賣座恐怖片《鬼病院》，又一韓國凶宅靈異大作等你來試膽！</p>
+                        <p>★ 首支預告在韓公開3日即突破70萬觀看次數，留言數逼近2萬，網友引頸期待！</p>
+                        <p>★ 「浪漫男神」盛駿首部主演電影，為求創作靈感竟闖詭異禁地！</p>
+                        <p>★ 神祕的大廈所發生的5個恐怖故事令人嚇破膽…</p>
+                        <p>恐怖網路漫畫作家智宇（盛駿 飾）為了尋找靈感，而造訪了被稱為「怪奇大廈」的老舊大廈。表情令人難以猜透的大廈管理人（金洪波
+                            飾），告訴智宇大廈所發生的不可思議事件，像是504號、708號等……智宇愈聽愈入迷，開始執著於怪奇大廈所發生的一切……</p>
                     </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt3">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★ 擊退《黑寡婦》榮登韓國票房冠軍！</p>
-                    <p>★ 榮獲2021 韓國富川國際奇幻影展 最佳作品獎</p>
-                    <p>★ 《鬼影》《淒厲人妻》鬼才導演班莊比辛達拿剛最新恐怖懼作</p>
-                    <p>★ 「韓國驚悚恐怖大師」《哭聲》羅泓軫導演擔任監製，參與企畫、製作、劇本撰寫，再創驚悚力作</p>
-                    <p>★ 《鬼病院：靈異直播》發行商×《模犯生》製片公司跨國合作，再創恐怖新境界！</p>
-                    <p>★ 揭露泰國薩滿信仰不為人知的駭人故事……</p>
-                    <p>位於泰國東北部依善地區中的一個小村落，住在這裡的人們深信著房子、森林、群山、樹木，甚至是稻田皆有靈魂。「尼姆」繼承家族信仰，供奉先祖成為巫覡，某天她卻發現外甥女「敏」似乎不太對勁，狀態也一天比一天... 詳全文</p>
-                </div>
-            </div>
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-04.jpg" alt="韓國校園恐怖怪談：點名沒到的學生">
-                </div>
-                <div class="movie_txt">
-                    <h2>韓國校園恐怖怪談：點名沒到的學生<br><span>School Strange Stories – The Child Who Wouldn’t Come</span></h2>
-                    <p>上映日期：<span>2021-07-14</span></p>
-                    <p>片　　長：<span>01時52分</span></p>
-                    <p>發行公司：<span>水元素文化傳媒有限公司</span></p>
-                    <p>IMDb分數：<span></span></p>
-                    <p>導演：<span>劉英善</span></p>
-                    <p>演員：<span>金素慧 、 鄭允錫 、 李圭賢</span></p>
-                    <div class="function">
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-03.jpg" alt="薩滿">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>薩滿 <span>The Medium</span> </h2>
+                        <p>上映日期：<span>2021-08-25</span></p>
+                        <p>片　　長：<span>02時11分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span>6.7</span></p>
+                        <p>導演：<span>班莊比辛達拿剛(Banjong Pisanthanakun)</span></p>
+                        <p>演員：<span>納利亞桾蒙空傣(Narilya Gulmongkolpech) 、 薩娃妮烏托瑪(Sawanee Utoomma)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_4">查看簡介 <span id="movie_change4">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_3">查看簡介 <span
+                                    id="movie_change3">▼</span></button>
+                            <a href="https://www.youtube.com/watch?v=wpRu1q9HE3g" target="_blank">預告</a>
+                        </div>
+
+                    </div>
+                </li>
+                <div class="introduction" id="info_txt3">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★ 擊退《黑寡婦》榮登韓國票房冠軍！</p>
+                        <p>★ 榮獲2021 韓國富川國際奇幻影展 最佳作品獎</p>
+                        <p>★ 《鬼影》《淒厲人妻》鬼才導演班莊比辛達拿剛最新恐怖懼作</p>
+                        <p>★ 「韓國驚悚恐怖大師」《哭聲》羅泓軫導演擔任監製，參與企畫、製作、劇本撰寫，再創驚悚力作</p>
+                        <p>★ 《鬼病院：靈異直播》發行商×《模犯生》製片公司跨國合作，再創恐怖新境界！</p>
+                        <p>★ 揭露泰國薩滿信仰不為人知的駭人故事……</p>
+                        <p>位於泰國東北部依善地區中的一個小村落，住在這裡的人們深信著房子、森林、群山、樹木，甚至是稻田皆有靈魂。「尼姆」繼承家族信仰，供奉先祖成為巫覡，某天她卻發現外甥女「敏」似乎不太對勁，狀態也一天比一天...
+                            詳全文</p>
+                    </div>
+                </div>
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-04.jpg" alt="韓國校園恐怖怪談：點名沒到的學生">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>韓國校園恐怖怪談：點名沒到的學生<br><span>School Strange Stories – The Child Who Wouldn’t Come</span></h2>
+                        <p>上映日期：<span>2021-07-14</span></p>
+                        <p>片　　長：<span>01時52分</span></p>
+                        <p>發行公司：<span>水元素文化傳媒有限公司</span></p>
+                        <p>IMDb分數：<span></span></p>
+                        <p>導演：<span>劉英善</span></p>
+                        <p>演員：<span>金素慧 、 鄭允錫 、 李圭賢</span></p>
+                        <div class="function">
+                            <button onclick="movie_info(this.id)" id="info_4">查看簡介 <span
+                                    id="movie_change4">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=kh9JH3Uh0xw" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt4">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>「老師，你身上有種…好聞的味道。」</p>
+                        <p>「千萬不要相信他，他不是好東西！」</p><br>
+                        <p>秀雅到鄉間學校實習，發現班上有一名叫英碩的學生總是缺席，而班導點名時也從不會叫到他的名字，同學間也不聞不問，讓她感到好奇。當她利用一次家庭訪問的機會，把他叫回學校上課後，班上卻開始不斷發生怪事，原來那些曾經對他好的同學，都遭遇了恐怖的陰影，而這次，連秀雅也難以倖免，也同時勾起她學生時期的陰影……
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt4">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>「老師，你身上有種…好聞的味道。」</p>
-                    <p>「千萬不要相信他，他不是好東西！」</p><br>
-                    <p>秀雅到鄉間學校實習，發現班上有一名叫英碩的學生總是缺席，而班導點名時也從不會叫到他的名字，同學間也不聞不問，讓她感到好奇。當她利用一次家庭訪問的機會，把他叫回學校上課後，班上卻開始不斷發生怪事，原來那些曾經對他好的同學，都遭遇了恐怖的陰影，而這次，連秀雅也難以倖免，也同時勾起她學生時期的陰影……</p>
-                </div>
-            </div>
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-05.jpg" alt="厲陰宅3：是惡魔逼我的">
-                </div>
-                <div class="movie_txt">
-                    <h2>厲陰宅3：是惡魔逼我的<br><span>The Conjuring: The Devil Made Me Do It</span></h2>
-                    <p>上映日期：<span>2021-07-22</span></p>
-                    <p>片　　長：<span>01時52分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>6.3</span></p>
-                    <p>導演：<span>麥可查維斯(Michael Chaves)</span></p>
-                    <p>演員：<span>薇拉法蜜嘉(Vera Farmiga) 、 派翠克威爾森(Patrick Wilson)</span></p>
-                    <div class="function">
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-05.jpg" alt="厲陰宅3：是惡魔逼我的">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>厲陰宅3：是惡魔逼我的<br><span>The Conjuring: The Devil Made Me Do It</span></h2>
+                        <p>上映日期：<span>2021-07-22</span></p>
+                        <p>片　　長：<span>01時52分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>6.3</span></p>
+                        <p>導演：<span>麥可查維斯(Michael Chaves)</span></p>
+                        <p>演員：<span>薇拉法蜜嘉(Vera Farmiga) 、 派翠克威爾森(Patrick Wilson)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_5">查看簡介 <span id="movie_change5">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_5">查看簡介 <span
+                                    id="movie_change5">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=Tn7RUnatLlE" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt5">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>《厲陰宅3：是惡魔逼我的》改編自華倫夫婦的真實檔案，該片揭露了一則集恐怖、謀殺與未知惡魔，令人寒毛直豎的故事，讓即便身為資深超自然現象調查者的艾德和羅琳華倫也感到害怕。在這個他們偵辦過最聳人聽聞的案件中，一開始他們要拯救一名年輕男孩的靈魂，接著他們經歷了前所未見的遭遇，並遇見了全美第一位以惡魔附身做為殺人抗辯理由的謀殺嫌犯。
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt5">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>《厲陰宅3：是惡魔逼我的》改編自華倫夫婦的真實檔案，該片揭露了一則集恐怖、謀殺與未知惡魔，令人寒毛直豎的故事，讓即便身為資深超自然現象調查者的艾德和羅琳華倫也感到害怕。在這個他們偵辦過最聳人聽聞的案件中，一開始他們要拯救一名年輕男孩的靈魂，接著他們經歷了前所未見的遭遇，並遇見了全美第一位以惡魔附身做為殺人抗辯理由的謀殺嫌犯。</p>
-                </div>
-            </div>
 
 
-            <div class="movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/new/2021-06.jpg" alt="惡靈陷阱">
-                </div>
-                <div class="movie_txt">
-                    <h2>惡靈陷阱<span> In The Trap</span></h2>
-                    <p>上映日期：<span>2021-09-24</span></p>
-                    <p>片　　長：<span>01時34分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span>3.9</span></p>
-                    <p>導演：<span>艾列修李格沃里(Alessio Liguori)</span></p>
-                    <p>演員：<span>傑米保羅(Jamie Paul) 、 大衛貝利(David Bailie) 、 索妮雅克林福德(Sonya Cullingford)</span></p>
-                    <div class="function">
+                <li class="movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/new/2021-06.jpg" alt="惡靈陷阱">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>惡靈陷阱<span> In The Trap</span></h2>
+                        <p>上映日期：<span>2021-09-24</span></p>
+                        <p>片　　長：<span>01時34分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span>3.9</span></p>
+                        <p>導演：<span>艾列修李格沃里(Alessio Liguori)</span></p>
+                        <p>演員：<span>傑米保羅(Jamie Paul) 、 大衛貝利(David Bailie) 、 索妮雅克林福德(Sonya Cullingford)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_6">查看簡介 <span id="movie_change6">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_6">查看簡介 <span
+                                    id="movie_change6">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=xpMizuwiimc" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt6">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>菲利浦是個孤獨的校稿員，遭到一股神祕未知的邪惡力量糾纏而心生恐懼的他，將自己關在公寓裡長達兩年之久，不敢踏出家門一步。在門外虎視眈眈的邪靈，也將以各種方式誘惑菲利浦，試圖佔據他的身體……
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt6">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>菲利浦是個孤獨的校稿員，遭到一股神祕未知的邪惡力量糾纏而心生恐懼的他，將自己關在公寓裡長達兩年之久，不敢踏出家門一步。在門外虎視眈眈的邪靈，也將以各種方式誘惑菲利浦，試圖佔據他的身體……</p>
-                </div>
-            </div>
-
-            
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-01.jpg" alt="安娜貝爾">
-                </div>
-                <div class="movie_txt">
-                    <h2>安娜貝爾<span> Annabelle</span></h2>
-                    <p>上映日期：<span>2014-10-02</span></p>
-                    <p>片　　長：<span>01時39分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>5.4</span></p>
-                    <p>導演：<span>約翰李昂尼提</span></p>
-                    <p>演員：<span>安娜貝爾瓦莉絲 / 沃德霍爾頓 / 托尼阿蒙多拉</span></p>
-                    <div class="function">
+
+
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-01.jpg" alt="安娜貝爾">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>安娜貝爾<span> Annabelle</span></h2>
+                        <p>上映日期：<span>2014-10-02</span></p>
+                        <p>片　　長：<span>01時39分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>5.4</span></p>
+                        <p>導演：<span>約翰李昂尼提</span></p>
+                        <p>演員：<span>安娜貝爾瓦莉絲 / 沃德霍爾頓 / 托尼阿蒙多拉</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_7">查看簡介 <span id="movie_change7">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_7">查看簡介 <span
+                                    id="movie_change7">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=atrVNkLD-Bw" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt7">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>安娜貝爾瓦莉絲領銜演出，惡靈亡美邪氣逼人！約翰為了替懷孕的妻子米亞準備一份特別的禮物，意外地帶回了一只名為安娜貝爾的神秘古董娃娃，米亞亦深受它的吸引。不料這份幸福感很快地崩毀，原來這只娃娃早已被邪靈佔據，不思議的超自然詭異事件與殺機就此悄悄蔓延…
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt7">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>安娜貝爾瓦莉絲領銜演出，惡靈亡美邪氣逼人！約翰為了替懷孕的妻子米亞準備一份特別的禮物，意外地帶回了一只名為安娜貝爾的神秘古董娃娃，米亞亦深受它的吸引。不料這份幸福感很快地崩毀，原來這只娃娃早已被邪靈佔據，不思議的超自然詭異事件與殺機就此悄悄蔓延…</p>
-                </div>
-            </div>
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-02.jpg" alt="七夜怪談2：貞子謎咒">
-                </div>
-                <div class="movie_txt">
-                    <h2>七夜怪談2：貞子謎咒<span> Ringu 2</span></h2>
-                    <p>上映日期：<span>1999-01-23</span></p>
-                    <p>片　　長：<span>01時36分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span>6.3</span></p>
-                    <p>導演：<span>中田秀夫(Hideo Nakta)</span></p>
-                    <p>演員：<span>中谷美紀(Miki Nakatani) 、 小日向文世(Kohinata Fumiyo) 、 深田恭子(Kyoko Fukada)</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-02.jpg" alt="七夜怪談2：貞子謎咒">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>七夜怪談2：貞子謎咒<span> Ringu 2</span></h2>
+                        <p>上映日期：<span>1999-01-23</span></p>
+                        <p>片　　長：<span>01時36分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span>6.3</span></p>
+                        <p>導演：<span>中田秀夫(Hideo Nakta)</span></p>
+                        <p>演員：<span>中谷美紀(Miki Nakatani) 、 小日向文世(Kohinata Fumiyo) 、 深田恭子(Kyoko Fukada)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_8">查看簡介 <span id="movie_change8">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_8">查看簡介 <span
+                                    id="movie_change8">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=r1EtU8Hcnv8" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt8">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★J-Horror恐怖經典《七夜怪談》正宗續集</p>
+                        <p>★日本恐怖大師中田秀夫偕手及原班人馬再出擊，貞子詛咒驚駭復活！</p><br>
+                        <p>承接《七夜怪談》劇情，淺川與龍司在井裡發現的貞子屍體，經過醫院驗屍解剖後，發現貞子竟然是一兩年前才死去的，難道貞子獨自一人在黑暗的古井中生存了將近30年之久！？驗屍結果傳出後，殺人錄影帶的謠言又起，貞子的詛咒再度重生，貪玩的女學生香苗（深田恭子
+                            飾）看過錄影帶後舉止詭異。另一方面，龍司的學生舞（中谷美紀 飾）著手調查龍司的死因及行蹤不明的淺川母子下落，而舞則找上淺川的同事岡崎一起調查…</p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt8">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★J-Horror恐怖經典《七夜怪談》正宗續集</p>
-                    <p>★日本恐怖大師中田秀夫偕手及原班人馬再出擊，貞子詛咒驚駭復活！</p><br>
-                    <p>承接《七夜怪談》劇情，淺川與龍司在井裡發現的貞子屍體，經過醫院驗屍解剖後，發現貞子竟然是一兩年前才死去的，難道貞子獨自一人在黑暗的古井中生存了將近30年之久！？驗屍結果傳出後，殺人錄影帶的謠言又起，貞子的詛咒再度重生，貪玩的女學生香苗（深田恭子 飾）看過錄影帶後舉止詭異。另一方面，龍司的學生舞（中谷美紀 飾）著手調查龍司的死因及行蹤不明的淺川母子下落，而舞則找上淺川的同事岡崎一起調查…</p>
-                </div>
-            </div>
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-03.jpg" alt="咒怨">
-                </div>
-                <div class="movie_txt">
-                    <h2>咒怨<span> Ju-On</span></h2>
-                    <p>上映日期：<span>2020-02-21</span></p>
-                    <p>片　　長：<span>01時32分</span></p>
-                    <p>發行公司：<span>暗光鳥</span></p>
-                    <p>IMDb分數：<span>6.7</span></p>
-                    <p>導演：<span>清水崇(Takashi Shimizu)</span></p>
-                    <p>演員：<span>奧菜惠 、 伊東美咲 、 上原美佐 、 市川由衣</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-03.jpg" alt="咒怨">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>咒怨<span> Ju-On</span></h2>
+                        <p>上映日期：<span>2020-02-21</span></p>
+                        <p>片　　長：<span>01時32分</span></p>
+                        <p>發行公司：<span>暗光鳥</span></p>
+                        <p>IMDb分數：<span>6.7</span></p>
+                        <p>導演：<span>清水崇(Takashi Shimizu)</span></p>
+                        <p>演員：<span>奧菜惠 、 伊東美咲 、 上原美佐 、 市川由衣</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_9">查看簡介 <span id="movie_change9">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_9">查看簡介 <span
+                                    id="movie_change9">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=4Jkh2LpL58I" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt9">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★繼《七夜怪談》七夜怪談中田秀夫後，日本恐怖大師清水祟自編自導的一鳴驚人之作。</p>
+                        <p>★ J-Horror恐怖經典重返大銀幕</p>
+                        <p>★ 駭人怨念，從此蔓延…</p><br>
+                        <p>「咒怨」是含怨而死者下的詛咒，於死者生前的居所積聚沖天怨氣，凡觸碰者必死無疑，並產生新「咒怨」，將恐怖死亡不斷蔓延，而「咒怨」將永遠聚集在凶宅之中，詛咒每一個來客……</p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt9">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★繼《七夜怪談》七夜怪談中田秀夫後，日本恐怖大師清水祟自編自導的一鳴驚人之作。</p>
-                    <p>★ J-Horror恐怖經典重返大銀幕</p>
-                    <p>★ 駭人怨念，從此蔓延…</p><br>
-                    <p>「咒怨」是含怨而死者下的詛咒，於死者生前的居所積聚沖天怨氣，凡觸碰者必死無疑，並產生新「咒怨」，將恐怖死亡不斷蔓延，而「咒怨」將永遠聚集在凶宅之中，詛咒每一個來客……</p>
-                </div>
-            </div>
 
 
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-04.jpg" alt="貞子：起源">
-                </div>
-                <div class="movie_txt">
-                    <h2>貞子：起源<span> Sadako</span></h2>
-                    <p>上映日期：<span>2019-08-23</span></p>
-                    <p>片　　長：<span>01時39分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span>4.9</span></p>
-                    <p>導演：<span>中田秀夫(Hideo Nakta)</span></p>
-                    <p>演員：<span>池田依來沙 、 塚本高史(TAKASHI TSUKAMOTO) 、 清水尋也(Shimizu Hiroya)</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-04.jpg" alt="貞子：起源">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>貞子：起源<span> Sadako</span></h2>
+                        <p>上映日期：<span>2019-08-23</span></p>
+                        <p>片　　長：<span>01時39分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span>4.9</span></p>
+                        <p>導演：<span>中田秀夫(Hideo Nakta)</span></p>
+                        <p>演員：<span>池田依來沙 、 塚本高史(TAKASHI TSUKAMOTO) 、 清水尋也(Shimizu Hiroya)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_10">查看簡介 <span id="movie_change10">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_10">查看簡介 <span
+                                    id="movie_change10">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=i-rJ6i16Sx8" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt10">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★ 日本最有名、最可怕的怨靈「貞子」……回來了！</p>
+                        <p>★ 導演 中田秀夫 X 原作 鈴木光司 元祖黃金組合重返「貞子系列」，娓娓道出「貞子恐怖的起源」</p>
+                        <p>★ 這部電影，不可饒恕！</p><br>
+                        <p>「拍了就會死！」這詛咒竟從YouTube而來……</p><br>
+                        <p>心理諮詢師茉優（池田依來沙 飾），負責看診一名由警察保護的少女。失去所有記憶的少女連自己的名字都忘了，而茉優身旁竟然也開始發生許多無法理解的怪事……</p><br>
+                        <p>另一方面，在網路行銷公司工作的祐介（塚本高史 飾）的推薦下，茉優的弟弟和真（清水尋也
+                            飾）成為了一名YouTuber，和真為了增加影片的點閱量，打算偷偷到發生過5人死亡的火災地點拍攝靈異影片，沒想到這卻讓他……</p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt10">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★ 日本最有名、最可怕的怨靈「貞子」……回來了！</p>
-                    <p>★ 導演 中田秀夫 X 原作 鈴木光司 元祖黃金組合重返「貞子系列」，娓娓道出「貞子恐怖的起源」</p>
-                    <p>★ 這部電影，不可饒恕！</p><br>
-                    <p>「拍了就會死！」這詛咒竟從YouTube而來……</p><br>
-                    <p>心理諮詢師茉優（池田依來沙 飾），負責看診一名由警察保護的少女。失去所有記憶的少女連自己的名字都忘了，而茉優身旁竟然也開始發生許多無法理解的怪事……</p><br>
-                    <p>另一方面，在網路行銷公司工作的祐介（塚本高史 飾）的推薦下，茉優的弟弟和真（清水尋也 飾）成為了一名YouTuber，和真為了增加影片的點閱量，打算偷偷到發生過5人死亡的火災地點拍攝靈異影片，沒想到這卻讓他……</p>
-                </div>
-            </div>
 
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-05.jpg" alt="牠">
-                </div>
-                <div class="movie_txt">
-                    <h2>牠<br><span> It</span></h2>
-                    <p>上映日期：<span>2017-09-07</span></p>
-                    <p>片　　長：<span>02時15分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>7.9</span></p>
-                    <p>導演：<span>安迪馬希提</span></p>
-                    <p>演員：<span>傑登里柏赫(Jaeden Lieberher) 、 比爾史科斯嘉 、 芬恩沃夫哈德(Finn Wolfhard) 、 懷特歐雷夫 、 傑克狄倫葛雷瑟 、 裘森賈布斯 、 蘇菲亞莉莉絲</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-05.jpg" alt="牠">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>牠<span> It</span></h2>
+                        <p>上映日期：<span>2017-09-07</span></p>
+                        <p>片　　長：<span>02時15分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>7.9</span></p>
+                        <p>導演：<span>安迪馬希提</span></p>
+                        <p>演員：<span>傑登里柏赫(Jaeden Lieberher) 、 比爾史科斯嘉 、 芬恩沃夫哈德(Finn Wolfhard) 、 懷特歐雷夫 、 傑克狄倫葛雷瑟 、 裘森賈布斯 、
+                                蘇菲亞莉莉絲</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_11">查看簡介 <span id="movie_change11">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_11">查看簡介 <span
+                                    id="movie_change11">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=i8-HwegJbF4" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt11">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>★史蒂芬金小說改編 史蒂芬金小說改編 史蒂芬金小說改編 、「母侵 」導 演執導 演執導</p><br>
+                        <p>敘述緬因州瑞德鎮的兒童開始消失，警方不得不下令在每天的晚間七點後進行宵禁。鎮上一群孩子們看到一名不尋常的「小丑」，「牠」似乎與瑞德鎮兒童們的消失有直接關係，他們甚至發現「牠」在這個小鎮上不是第一次出現…。
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt11">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>★史蒂芬金小說改編 史蒂芬金小說改編 史蒂芬金小說改編 、「母侵 」導 演執導 演執導</p><br>
-                    <p>敘述緬因州瑞德鎮的兒童開始消失，警方不得不下令在每天的晚間七點後進行宵禁。鎮上一群孩子們看到一名不尋常的「小丑」，「牠」似乎與瑞德鎮兒童們的消失有直接關係，他們甚至發現「牠」在這個小鎮上不是第一次出現…。</p>
-                </div>
-            </div>
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-06.jpg" alt="厲陰宅">
-                </div>
-                <div class="movie_txt">
-                    <h2>厲陰宅<span> The Conjuring</span></h2>
-                    <p>上映日期：<span>2013-08-02</span></p>
-                    <p>片　　長：<span>01時52分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>7.5</span></p>
-                    <p>導演：<span>溫子仁(James Wan)</span></p>
-                    <p>演員：<span>派翠克威爾森(Patrick Wilson) 、 朗李文斯頓(Ron Livingston) 、 薇拉法蜜嘉(Vera Farmiga) 、 莉莉泰勒</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-06.jpg" alt="厲陰宅">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>厲陰宅<span> The Conjuring</span></h2>
+                        <p>上映日期：<span>2013-08-02</span></p>
+                        <p>片　　長：<span>01時52分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>7.5</span></p>
+                        <p>導演：<span>溫子仁(James Wan)</span></p>
+                        <p>演員：<span>派翠克威爾森(Patrick Wilson) 、 朗李文斯頓(Ron Livingston) 、 薇拉法蜜嘉(Vera Farmiga) 、 莉莉泰勒</span>
+                        </p>
+
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_12">查看簡介 <span id="movie_change12">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_12">查看簡介 <span
+                                    id="movie_change12">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=bTFik5Pnkvg" target="_blank">預告</a>
                         </div>
+
+                    </div>
+                </li>
+                <div class="introduction" id="info_txt12">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>【厲陰宅】改編自真實故事，敘述一起駭人的恐怖傳說。世界聞名的超自然現象研究者艾德和羅琳華倫受託來幫助一個家庭，這家人深受僻靜農舍裡的某個黑暗邪靈侵擾。</p>
                     </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt12">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>【厲陰宅】改編自真實故事，敘述一起駭人的恐怖傳說。世界聞名的超自然現象研究者艾德和羅琳華倫受託來幫助一個家庭，這家人深受僻靜農舍裡的某個黑暗邪靈侵擾。</p>
-                </div>
-            </div>
 
 
 
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-07.jpg" alt="鬼片：即將上映">
-                </div>
-                <div class="movie_txt">
-                    <h2>鬼片：即將上映<span> Warning: Do Not Play</span></h2>
-                    <p>上映日期：<span>2019-09-06</span></p>
-                    <p>片　　長：<span>01時26分</span></p>
-                    <p>發行公司：<span>車庫娛樂</span></p>
-                    <p>IMDb分數：<span>4.9</span></p>
-                    <p>導演：<span>金進元</span></p>
-                    <p>演員：<span>徐睿知 、 陳善奎</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-07.jpg" alt="鬼片：即將上映">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>鬼片：即將上映<span> Warning: Do Not Play</span></h2>
+                        <p>上映日期：<span>2019-09-06</span></p>
+                        <p>片　　長：<span>01時26分</span></p>
+                        <p>發行公司：<span>車庫娛樂</span></p>
+                        <p>IMDb分數：<span>4.9</span></p>
+                        <p>導演：<span>金進元</span></p>
+                        <p>演員：<span>徐睿知 、 陳善奎</span></p>
+
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_13">查看簡介 <span id="movie_change13">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_13">查看簡介 <span
+                                    id="movie_change13">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=PR-ghdSSxek" target="_blank">預告</a>
                         </div>
+
+                    </div>
+                </li>
+                <div class="introduction" id="info_txt13">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>在調查這部電影時，美京開始將自己寫進自己的劇本中。故事敘述一名電影導演，追尋由鬼所拍攝的被禁電影的蹤跡。然而，當她越接近真相，生活中就開始發生了許多奇怪的事，彷彿她已置身於恐怖電影中，電影和真實生活之間的界限越來越模糊，將她推向一個完全無法預測的結局。
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt13">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>在調查這部電影時，美京開始將自己寫進自己的劇本中。故事敘述一名電影導演，追尋由鬼所拍攝的被禁電影的蹤跡。然而，當她越接近真相，生活中就開始發生了許多奇怪的事，彷彿她已置身於恐怖電影中，電影和真實生活之間的界限越來越模糊，將她推向一個完全無法預測的結局。</p>
-                </div>
-            </div>
 
 
 
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-08.jpg" alt="厲陰宅2">
-                </div>
-                <div class="movie_txt">
-                    <h2>厲陰宅2<span> THE CONJURING 2</span></h2>
-                    <p>上映日期：<span>2016-06-08</span></p>
-                    <p>片　　長：<span>02時13分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>7.4</span></p>
-                    <p>導演：<span>溫子仁(James Wan)</span></p>
-                    <p>演員：<span>派翠克威爾森(Patrick Wilson) 、 薇拉法蜜嘉(Vera Farmiga) 、 法蘭西斯歐康納 、 麥迪遜沃爾夫</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-08.jpg" alt="厲陰宅2">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>厲陰宅2<span> THE CONJURING 2</span></h2>
+                        <p>上映日期：<span>2016-06-08</span></p>
+                        <p>片　　長：<span>02時13分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>7.4</span></p>
+                        <p>導演：<span>溫子仁(James Wan)</span></p>
+                        <p>演員：<span>派翠克威爾森(Patrick Wilson) 、 薇拉法蜜嘉(Vera Farmiga) 、 法蘭西斯歐康納 、 麥迪遜沃爾夫</span></p>
+
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_14">查看簡介 <span id="movie_change14">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_14">查看簡介 <span
+                                    id="movie_change14">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=cXoravijc2w" target="_blank">預告</a>
                         </div>
+
+                    </div>
+                </li>
+                <div class="introduction" id="info_txt14">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>奧斯卡獎提名女演員薇拉法蜜嘉（《型男飛行日誌》、影集《貝茨旅館》）及派屈克威爾森（《陰兒房》電影糸列）再度飾演艾德與羅琳華倫夫婦，他們來到倫敦北部，展開一場在他們生涯中數一數二可怕的超自然調查，幫助一名獨自撫養四個孩子的單親媽媽，他們全家住在一間邪魔不斷出沒的鬼屋。
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt14">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>奧斯卡獎提名女演員薇拉法蜜嘉（《型男飛行日誌》、影集《貝茨旅館》）及派屈克威爾森（《陰兒房》電影糸列）再度飾演艾德與羅琳華倫夫婦，他們來到倫敦北部，展開一場在他們生涯中數一數二可怕的超自然調查，幫助一名獨自撫養四個孩子的單親媽媽，他們全家住在一間邪魔不斷出沒的鬼屋。</p>
-                </div>
-            </div>
-            <div class="hide movie_info">
-                <div class="movie_img">
-                    <img src="img/vedio_img/old/2021-09.jpg" alt="安娜貝爾：造孽">
-                </div>
-                <div class="movie_txt">
-                    <h2>安娜貝爾：造孽<span> Annabelle: Creation</span></h2>
-                    <p>上映日期：<span>2017-08-10</span></p>
-                    <p>片　　長：<span>01時49分</span></p>
-                    <p>發行公司：<span>華納兄弟</span></p>
-                    <p>IMDb分數：<span>7.0</span></p>
-                    <p>導演：<span>大衛桑德柏格(David F. Sandberg)</span></p>
-                    <p>演員：<span>史蒂芬席格曼(Stephanie Sigman) 、 安東尼拉帕格利亞(Anthony LaPaglia) 、 米蘭妲奧圖(Miranda Otto) 、 泰莉莎貝特曼(Talitha Bateman)</span></p>
-                    <div class="function">
+                <li class="hide movie_info">
+                    <div class="movie_img">
+                        <img src="img/vedio_img/old/2021-09.jpg" alt="安娜貝爾：造孽">
+                    </div>
+                    <div class="movie_txt">
+                        <h2>安娜貝爾：造孽<span> Annabelle: Creation</span></h2>
+                        <p>上映日期：<span>2017-08-10</span></p>
+                        <p>片　　長：<span>01時49分</span></p>
+                        <p>發行公司：<span>華納兄弟</span></p>
+                        <p>IMDb分數：<span>7.0</span></p>
+                        <p>導演：<span>大衛桑德柏格(David F. Sandberg)</span></p>
+                        <p>演員：<span>史蒂芬席格曼(Stephanie Sigman) 、 安東尼拉帕格利亞(Anthony LaPaglia) 、 米蘭妲奧圖(Miranda Otto) 、
+                                泰莉莎貝特曼(Talitha Bateman)</span></p>
                         <div class="function">
-                            <button  onclick="movie_info(this.id)" id="info_15">查看簡介 <span id="movie_change15">▼</span></button>
+                            <button onclick="movie_info(this.id)" id="info_15">查看簡介 <span
+                                    id="movie_change15">▼</span></button>
                             <a href="https://www.youtube.com/watch?v=0VEE8WeYpSs" target="_blank">預告</a>
                         </div>
                     </div>
+                </li>
+                <div class="introduction" id="info_txt15">
+                    <div>
+                        <h2>劇情介紹：</h2>
+                        <p>在《安娜貝爾：造孽》的故事中，清楚交代安娜貝爾的起源，手藝精巧的洋娃娃製作師山謬(安東尼拉帕格利亞 飾)及其妻子(米蘭妲奧圖
+                            飾)遭逢愛女小貝的死亡意外，思女心切的他們終日祈禱能夠重見愛女，而他們的祈求竟獲得回應：「小貝」表達希望能夠附身在娃娃身上的願望。但是很快地，這對夫妻發現附身在娃娃身上的不是他們的女兒，於是決定將「它」關起來。
+                        </p>
+                        <br>
+                        <p>
+                            幾年後這對夫妻款待了一名修女及幾名孤兒院的女孩們來到他們家，但這群女孩很快地成為安娜貝爾娃娃的新目標。
+                            《安娜貝爾：造孽》由《鬼關燈》導演大衛桑德柏格執導，《厲陰宅》導演溫子仁與彼得沙佛朗擔任製作人，演員包括史蒂芬席格曼、安東尼拉帕格利亞、米蘭妲奧圖與童星泰莉莎貝特曼與露露威爾森等共同演出。
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="introduction" id="info_txt15">
-                <div >                
-                    <h2>劇情介紹：</h2>
-                    <p>在《安娜貝爾：造孽》的故事中，清楚交代安娜貝爾的起源，手藝精巧的洋娃娃製作師山謬(安東尼拉帕格利亞 飾)及其妻子(米蘭妲奧圖 飾)遭逢愛女小貝的死亡意外，思女心切的他們終日祈禱能夠重見愛女，而他們的祈求竟獲得回應：「小貝」表達希望能夠附身在娃娃身上的願望。但是很快地，這對夫妻發現附身在娃娃身上的不是他們的女兒，於是決定將「它」關起來。</p>
-                    <br>
-                    <p>
-                        幾年後這對夫妻款待了一名修女及幾名孤兒院的女孩們來到他們家，但這群女孩很快地成為安娜貝爾娃娃的新目標。
-                        《安娜貝爾：造孽》由《鬼關燈》導演大衛桑德柏格執導，《厲陰宅》導演溫子仁與彼得沙佛朗擔任製作人，演員包括史蒂芬席格曼、安東尼拉帕格利亞、米蘭妲奧圖與童星泰莉莎貝特曼與露露威爾森等共同演出。
-                    </p>
-                </div>
-            </div>
+            </ul>
+
             <div onclick="show_hide()" class="hide_info" id="hide_info">查看更多...</div>
         </section>
     </article>
     <div id="right_function">
-        <a href="#" class="fab fa-facebook-square"></a>
-        <a href="#" class="fab fa-instagram">  </a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#">▲</a>
+        <ul>
+            <li><a href="#" class="fab fa-facebook-square"></a></li>
+            <li><a href="#" class="fab fa-instagram"> </a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#">▲</a></li>
+        </ul>
     </div>
     <footer>
         <div class="statement">
@@ -645,4 +688,5 @@
         </div>
     </footer>
 </body>
+
 </html>

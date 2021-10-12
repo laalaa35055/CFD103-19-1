@@ -1,6 +1,9 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0;  
+}
+p{
+    font-family:'MingLiU', 'PMingLiU','Regular';
 }
 @font-face {
 font-family: 'Wu';
@@ -78,7 +81,7 @@ header .subscription a{
     height: 80px;
     background-color: rgba(11, 11, 11, .7);
     z-index: 999;
-    top: 70px;
+    top:66px;
     left: 150px;
     display: flex;
     flex-direction: column;
@@ -124,7 +127,10 @@ footer{
     right: 10px;
     bottom: 150px;
 }
-#right_function a{
+#right_function ul{
+    list-style: none;
+}
+#right_function li a{
     color: #ccc;
     border-bottom: 1px solid rgba(88, 88, 88, .6);
     display: flex;
@@ -137,11 +143,11 @@ footer{
     text-decoration: none;
     
 }
-#right_function a:hover{
+#right_function li a:hover{
     background-color: #0079B7;
     color: #ccc;
     cursor: pointer;
 }
-#right_function a:nth-of-type(4){
+#right_function li:nth-of-type(4) a{
     border-bottom: none;
 }
