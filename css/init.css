@@ -8,13 +8,15 @@ src: url('../font/onryou/onryou.TTF') format("truetype");}
 body{
     background-image: url(../img/background_image.jpg);
 }
-
 /* header 設定 */
 
+article{
+    width: 100%;
+}
 header{
     /* position: fixed; */
+    /* top: 0; */
     width: 100%;
-    /* left: calc(100% / 2 - 512px); */
     margin: auto auto 10px auto;
     background-color: transparent;
     z-index: 99;
@@ -22,14 +24,16 @@ header{
 header .subscription{
     width: 1200px;
     margin: 10px auto;
-    padding-bottom: 50px;
-    
+      background-color: transparent;
 }
 header .subscription a{
     float: right;
     color: #33ccff;
     text-decoration: none;
     padding: 10px;
+}
+.banner_block{
+    /* background-color: rgba(11, 11, 11, .6); */
 }
 .banner{
     margin: auto;
@@ -39,7 +43,6 @@ header .subscription a{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(11, 11, 11, .6);
-    /* border-bottom: 3px solid #444; */
     border-radius: 10px;
 }
 .banner .logo {
@@ -75,7 +78,7 @@ header .subscription a{
     height: 80px;
     background-color: rgba(11, 11, 11, .7);
     z-index: 999;
-    top: 50px;
+    top: 70px;
     left: 150px;
     display: flex;
     flex-direction: column;
@@ -118,7 +121,7 @@ footer{
     height: 200px;
     background-color: rgba(55, 55, 55, .6);
     position: fixed;
-    right: 80px;
+    right: 10px;
     bottom: 150px;
 }
 #right_function a{

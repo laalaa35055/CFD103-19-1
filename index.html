@@ -10,18 +10,39 @@
     <title>墨 x 怪</title>
     <style type="text/css">   
         .saying_block{
-            margin: 50px auto auto;
-            background-color: rgba(22, 22, 22,.6);
+            width: 100%;
+            margin: auto;
+            /* background-color: rgba(22, 22, 22,.6); */
         }
         .saying_img{
             margin: auto;
-            width: 1024px;
+            width: 1200px;
             display: flex;
             justify-content: center;
-            opacity: .6;
+
+            position: relative;
+        }
+        .saying_img p{
+           color: #ccc;
+           font-size: 20px;
+           position: absolute;
+           right: 200px;
+           bottom: 120px;
+           opacity: 0.8;
+           font-weight: bold;
+        }
+        .saying_img p::after{
+          content: '諺語';
+          opacity: .7;
+          color: #ccc;
+          position: absolute;
+          top: 50px;
+          right: -70px;
         }
         .saying_img img{
             width: 100%;
+            height: 865px;            
+            opacity: .5;
             /* width: 1024px; */    
             vertical-align: top;
             border-radius: 10px;
@@ -49,7 +70,7 @@
         }
         h1{
             text-align: center;
-            color: rgba(255, 0, 0, .7);
+            color: rgba(255, 0, 0, .8);
             font-family: 'Wu';
             font-size: 50px;
             margin-bottom: 50px;
@@ -97,7 +118,8 @@
         }
         .culture h2{
             font-size: 30px;
-            color: rgba(255, 255, 0, .8);
+            color: #E0CE03;
+            opacity: .8;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -258,41 +280,39 @@
             vertical-align: top;
         }
 
-
-
-        
-
-
     </style>
 </head>
 <body>
+    
     <header>
         <div class="subscription">
             <a href="follow.html">訂閱我們</a>
             <a href="contribution.html">投稿</a>
         </div>
-        <div class="banner">
-            <div class="logo">
+        <div class="banner_block">
+            <div class="banner">
+                <div class="logo">
                 <a href="index.html"><img src="img/decorate/logo.png" alt=""></a>
-                <!-- <img src="https://picsum.photos/200/100/?random=1"> -->
             </div>
             <nav class="nav_bar">
-                <a href="ghost_culture.html">怪談</a>
-                <a href="ghost_encyclopedia.html">鬼怪小百科</a>
+                <a href="ghost_culture.html">文化怪談</a>
+                <a href="ghost_encyclopedia.html">妖怪百科</a>
                 <a class="discuss" onclick="discuss_bar_block();">熱門討論</a>
-                <a href="ghost_game.html">妖怪池</a>
+                <a href="ghost_game.html">妖怪圖</a>
                 <a href="about.html">關於我們</a> 
                 <div id="discuss_bar_block">
                     <a href="discuss.html">討論區</a>
                     <a href="movie_info.html">電影資訊</a>
                 </div>
             </nav>
+            </div>
         </div>             
     </header>
     <article >
         <section class="saying_block">
             <div class="saying_img">
                 <img src="img/saying_img.jpg" alt="">
+                <p>寧可信其有，不可信其無</p>
             </div>
         </section>
     </article>
@@ -308,13 +328,14 @@
                 </div>
             <div class="about_img">
                 <img src="img/decorate/about_img.png" alt="">
+                
             </div>
         </div>
         </section>
     </article>
     <article>
         <section class="strange_block">
-            <h1>怪談</h1>
+            <h1>文化怪談</h1>
             <div class="culture">
                 <div class="culture_img">
                     <img src="img/decorate/japan.png" alt="日本文化">
@@ -353,7 +374,7 @@
     <article>
         <section class="Encyclopedia_block">
             <div>
-                <h1>鬼怪小百科</h1>
+                <h1>妖怪百科</h1>
                 <p>日式、泰式、台式、各國鬼怪<br>哪一種的類型令你害怕呢？...</p>
                 <a href="ghost_encyclopedia.html">more...</a>
             </div>
